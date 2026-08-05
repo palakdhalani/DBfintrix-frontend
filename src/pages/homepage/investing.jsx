@@ -29,7 +29,7 @@ const Investing = () => {
 
   return (
     <section className="bg-white py-20 md:py-24">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
           {/* Left Side: Dynamic Image */}

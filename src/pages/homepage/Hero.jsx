@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BarChart3, Coins, Shield } from 'lucide-react';
 import logo from '../../assets/DBFINTTIX_LOGO.jpg.jpeg';
-import slide1 from '../../assets/1 slide.png';
-import slide2 from '../../assets/2 slide.png';
-import slide3 from '../../assets/3 slide.png';
+import slide1 from '../../assets/The Role of Corporate Finance in Growth.jpg';
+// import slide2 from '../../assets/2 slide.png';
+// import slide3 from '../../assets/3 slide.png';
 
 const slides = [
-    { id: 1, bgImage: slide1 },
-    { id: 2, bgImage: slide2 },
-    { id: 3, bgImage: slide3 }
+    { id: 1, bgImage: slide1 }
 ];
 
 const defaultCards = [
@@ -71,7 +69,7 @@ const Hero = ({
                 {!noBgImage && <div className="absolute inset-0 bg-brand-dark/85 z-0"></div>}
 
                 {/* Hero Content */}
-                <div className="container mx-auto px-6 max-w-7xl flex-grow flex flex-col justify-center relative z-10 pt-32">
+                <div className="container mx-auto px-6 flex-grow flex flex-col justify-center relative z-10 pt-32">
                     <div className="flex flex-col lg:flex-row items-center w-full gap-8">
 
                         {/* Content */}
@@ -79,14 +77,14 @@ const Hero = ({
                             <h1 className="text-5xl md:text-6xl text-white leading-tight mb-6 font-bold tracking-tight">
                                 {title ? title : (
                                     <>
-                                        Achieve Financial <br />
-                                        <span className="text-brand-green">Success & Security</span>
+                                        Build Wealth <br />
+                                        <span className="text-brand-green">Build Your Business</span>
                                     </>
                                 )}
                             </h1>
                             {subtitle !== false && (
                                 <p className={`text-gray-300 text-lg mb-8 max-w-md ${centerText ? 'mx-auto' : ''}`}>
-                                    {subtitle ? subtitle : "Expert financial planning and investment solutions tailored for your future."}
+                                    {subtitle ? subtitle : "Become an Investor or Start Your Own Stock Market Business with India's Leading Broking Partners."}
                                 </p>
                             )}
                             {showButton && (
@@ -104,11 +102,7 @@ const Hero = ({
                                     <img src={sideImage} alt="Hero illustration" className="max-w-full h-auto max-h-[400px] object-contain relative z-10 drop-shadow-2xl rounded-2xl" />
                                 ) : (
                                     <div className="h-[200px] w-full flex items-center justify-end relative">
-                                        {/* Decorative Line */}
-                                        <svg className="absolute w-full h-full left-0 top-0 opacity-40 pointer-events-none" viewBox="0 0 500 200">
-                                            <path d="M0 150 Q 250 50 500 100" stroke="#0f9d27" strokeWidth="2" fill="transparent" className="text-brand-green" />
-                                            <path d="M0 160 Q 250 60 500 110" stroke="#ffffff" strokeWidth="1" fill="transparent" opacity="0.3" />
-                                        </svg>
+                                        {/* Removed Decorative Line per user request */}
                                     </div>
                                 )}
                             </div>
@@ -119,7 +113,7 @@ const Hero = ({
 
             {/* Overlapping Bottom Cards */}
             {displayCards && displayCards.length > 0 && (
-                <div className="container mx-auto px-6 max-w-7xl relative z-20 -mt-24 pb-12">
+                <div className="container mx-auto px-6 relative z-20 -mt-24 pb-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {displayCards.map((card, index) => (
                             <div key={index} className={`bg-white rounded-3xl p-8 shadow-xl border border-gray-100 flex flex-col items-start hover:shadow-2xl transition-shadow group ${card.isOffset ? 'transform md:-translate-y-4' : ''}`}>

@@ -18,23 +18,17 @@ const AdminDashboard = () => {
         // Fetch inquiries from our new backend
         const fetchInquiries = async () => {
             try {
-                // Assuming backend runs on 5000
                 const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
                 const data = await response.json();
                 setInquiries(data);
-                setLoading(false);
+                setError(null);
             } catch (err) {
-                console.error("Backend not running or error:", err);
-                // Fallback to mock data if backend isn't running yet
-                setInquiries([
-                    { _id: '1', fullName: 'Rahul Sharma', emailAddress: 'rahul@example.com', mobileNumber: '9876543210', preferredTime: 'morning', status: 'new', createdAt: new Date().toISOString() },
-                    { _id: '2', fullName: 'Priya Patel', emailAddress: 'priya@example.com', mobileNumber: '9876543211', preferredTime: 'afternoon', status: 'in-progress', createdAt: new Date(Date.now() - 86400000).toISOString() },
-                    { _id: '3', fullName: 'Amit Kumar', emailAddress: 'amit@example.com', mobileNumber: '9876543212', preferredTime: 'evening', status: 'resolved', createdAt: new Date(Date.now() - 172800000).toISOString() },
-                ]);
-                setError("Backend is not running. Showing mock data.");
+                console.error("Error fetching from backend:", err);
+                setError("Failed to load inquiries from server.");
+            } finally {
                 setLoading(false);
             }
         };

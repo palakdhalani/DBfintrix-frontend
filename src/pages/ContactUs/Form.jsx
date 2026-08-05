@@ -29,18 +29,16 @@ const Form = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                setStatus({ type: 'success', message: 'Thank you! We will call you back soon.' });
-                setFormData({ fullName: '', mobileNumber: '', emailAddress: '', preferredTime: '', message: '' });
-            } else {
-                setStatus({ type: 'error', message: data.error || 'Something went wrong. Please try again.' });
+            
+            if (!response.ok) {
+                throw new Error('Failed to submit form');
             }
+            
+            setStatus({ type: 'success', message: 'Thank you! We will call you back soon.' });
+            setFormData({ fullName: '', mobileNumber: '', emailAddress: '', preferredTime: '', message: '' });
         } catch (error) {
             console.error('Submission error:', error);
-            setStatus({ type: 'error', message: 'Failed to connect to the server. Please try again later.' });
+            setStatus({ type: 'error', message: 'Failed to submit. Please try again.' });
         } finally {
             setIsSubmitting(false);
         }

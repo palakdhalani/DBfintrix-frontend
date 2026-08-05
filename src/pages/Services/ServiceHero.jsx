@@ -54,11 +54,23 @@ const ServiceHero = ({ image }) => {
                 <span className="font-semibold text-sm md:text-base text-gray-700 mr-2 border-r border-gray-300 pr-2">+91</span>
                 <input
                   type="tel"
+                  id="demat-mobile"
                   placeholder="Enter your mobile number"
                   className="flex-grow min-w-0 outline-none text-sm md:text-base text-gray-800 placeholder-gray-400 bg-transparent"
                 />
               </div>
-              <button className="bg-brand-dark hover:bg-gray-800 text-white px-8 py-3.5 md:py-3 rounded-full font-bold text-sm flex-shrink-0 transition-colors shadow-lg shadow-gray-900/20 whitespace-nowrap w-full sm:w-auto">
+              <button 
+                onClick={() => {
+                  const mobile = document.getElementById('demat-mobile').value;
+                  if(mobile.length >= 10) {
+                    const message = encodeURIComponent(`Hello, I would like to open a Demat Account. My mobile number is: ${mobile}`);
+                    window.open(`https://wa.me/919033600411?text=${message}`, '_blank');
+                  } else {
+                    alert('Please enter a valid mobile number');
+                  }
+                }}
+                className="bg-brand-dark hover:bg-gray-800 text-white px-8 py-3.5 md:py-3 rounded-full font-bold text-sm flex-shrink-0 transition-colors shadow-lg shadow-gray-900/20 whitespace-nowrap w-full sm:w-auto"
+              >
                 Open Demat Account
               </button>
             </div>

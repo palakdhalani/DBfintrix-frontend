@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Users, MessageSquare, Newspaper, Settings, LogOut, Briefcase, FileText } from 'lucide-react';
+import { LayoutDashboard, Users, MessageSquare, Newspaper, Settings, LogOut, Briefcase, FileText, PhoneOutgoing } from 'lucide-react';
 import logo from '../../assets/DBFINTTIX_LOGO.jpg.jpeg';
 
 const AdminLayout = () => {
@@ -10,9 +10,8 @@ const AdminLayout = () => {
 
     const navItems = [
         { name: 'Dashboard', path: '/admin', icon: <LayoutDashboard className="w-5 h-5" /> },
-        { name: 'Services Content', path: '/admin/services-content', icon: <Briefcase className="w-5 h-5" /> },
-        { name: 'News Content', path: '/admin/news-content', icon: <FileText className="w-5 h-5" /> },
-        { name: 'Users', path: '/admin/users', icon: <Users className="w-5 h-5" /> },
+        { name: 'Blog Content', path: '/admin/blog-content', icon: <FileText className="w-5 h-5" /> },
+        { name: 'Callback Requests', path: '/admin/users', icon: <PhoneOutgoing className="w-5 h-5" /> },
     ];
 
     return (
