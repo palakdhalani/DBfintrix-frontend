@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/DBFINTTIX_LOGO.jpg.jpeg';
 
 const Footer = () => {
@@ -44,11 +45,12 @@ const Footer = () => {
                             <span className="absolute left-0 -bottom-2 w-1/2 h-1 bg-[#0f9d27] rounded-full"></span>
                         </h3>
                         <ul className="space-y-4">
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Home</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> About Us</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Services</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Insights & News</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Contact</a></li>
+                            <li><Link to="/" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Home</Link></li>
+                            <li><Link to="/why-choose-us" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> About Us</Link></li>
+                            <li><Link to="/services" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Services</Link></li>
+                            <li><Link to="/gallery" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Gallery</Link></li>
+                            <li><Link to="/blog" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Insights & Blog</Link></li>
+                            <li><Link to="/contact" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Contact</Link></li>
                         </ul>
                     </div>
 

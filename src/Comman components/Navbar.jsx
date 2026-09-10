@@ -60,6 +60,7 @@ const Navbar = () => {
                     <Link to="/" onClick={() => handleNavClick('/')} className={getLinkStyle('/')}>Home</Link>
                     <Link to="/services" onClick={() => handleNavClick('/services')} className={getLinkStyle('/services')}>Services</Link>
                     <Link to="/why-choose-us" onClick={() => handleNavClick('/why-choose-us')} className={getLinkStyle('/why-choose-us')}>Why Choose Us</Link>
+                    <Link to="/gallery" onClick={() => handleNavClick('/gallery')} className={getLinkStyle('/gallery')}>Gallery</Link>
                     <Link to="/blog" onClick={() => handleNavClick('/blog')} className={getLinkStyle('/blog')}>Blog</Link>
                     <Link to="/contact" onClick={() => handleNavClick('/contact')} className={getLinkStyle('/contact')}>ContactUs</Link>
                 </div>
@@ -116,6 +117,7 @@ const Navbar = () => {
                     <Link to="/" onClick={() => handleNavClick('/')} className={getLinkStyle('/')}>Home</Link>
                     <Link to="/services" onClick={() => handleNavClick('/services')} className={getLinkStyle('/services')}>Services</Link>
                     <Link to="/why-choose-us" onClick={() => handleNavClick('/why-choose-us')} className={getLinkStyle('/why-choose-us')}>Why Choose Us</Link>
+                    <Link to="/gallery" onClick={() => handleNavClick('/gallery')} className={getLinkStyle('/gallery')}>Gallery</Link>
                     <Link to="/blog" onClick={() => handleNavClick('/blog')} className={getLinkStyle('/blog')}>Blog</Link>
                     <Link to="/contact" onClick={() => handleNavClick('/contact')} className={getLinkStyle('/contact')}>ContactUs</Link>
                     

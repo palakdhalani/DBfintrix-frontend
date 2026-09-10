@@ -5,6 +5,7 @@ import ServicesMainPage from './pages/Services/ser';
 import OpenAccount from './Comman components/OpenAccount';
 import BecomePartner from './Comman components/BecomePartner';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Gallery from './pages/Gallery/Gallery';
 import BlogPage from './pages/Blog/BlogPage';
 import BlogDetail from './pages/Blog/BlogDetail';
 import WhyChooseUs from './pages/WhyChooseUs/WhyChooseUs';
@@ -33,6 +34,7 @@ function App() {
       <Route path="/open-account" element={<OpenAccount />} />
       <Route path="/become-partner" element={<BecomePartner />} />
       <Route path="/why-choose-us" element={<WhyChooseUs />} />
+      <Route path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blog/:id" element={<BlogDetail />} />
