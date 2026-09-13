@@ -17,7 +17,7 @@ const ServicesMainPage = () => {
     if (serviceParam && servicesData.some(s => s.id === serviceParam)) {
       return serviceParam;
     }
-    return 'life-insurance';
+    return servicesData[0]?.id || 'bonds';
   });
 
   // Sync when query param changes
@@ -53,7 +53,7 @@ const ServicesMainPage = () => {
               <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-3 sm:p-4 sticky top-28">
                 
                 <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider px-3 py-2 mb-1">
-                  Our Services
+                  Services for Investors
                 </h3>
 
                 <nav className="flex flex-col gap-1.5">
@@ -92,7 +92,7 @@ const ServicesMainPage = () => {
                     <span>Need Guidance?</span>
                   </div>
                   <p className="text-xs text-gray-600 leading-relaxed mb-4">
-                    Unsure which insurance or investment policy fits your needs? Speak with our certified advisor.
+                    Unsure which investment product or portfolio strategy fits your financial goals? Speak with our certified wealth advisor.
                   </p>
                   <Link
                     to="/contact"

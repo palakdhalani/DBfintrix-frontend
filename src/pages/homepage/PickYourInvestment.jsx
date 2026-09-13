@@ -21,21 +21,21 @@ const PickYourInvestment = () => {
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="text-brand-green font-bold tracking-widest text-sm">›››</span>
             <span className="text-brand-dark font-extrabold tracking-wider text-sm uppercase">
-              COMPREHENSIVE FINANCIAL SUITE
+              SERVICES FOR INVESTORS
             </span>
             <span className="text-brand-green font-bold tracking-widest text-sm">‹‹‹</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-dark uppercase tracking-tight mb-4">
             <AnimatedWords 
-              text="Our Services &" 
+              text="Our Services for" 
               className="mr-3"
             />
             <span className="animate-text-gradient font-black block sm:inline">
-              Insurance Solutions
+              Investors
             </span>
           </h2>
           <p className="text-gray-500 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Discover DB Fintrix's complete range of trusted insurance and wealth protection services. Click on any service below to view full coverage details, benefits, and customized quotes.
+            Discover DB Fintrix's complete suite of investment, trading, and wealth management services designed for modern investors. Click on any service below to view full details and start investing.
           </p>
         </div>
 
