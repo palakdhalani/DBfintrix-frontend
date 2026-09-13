@@ -1,6 +1,5 @@
 import React from 'react';
 import bhargavibaImg from '../../assets/bhargaviba_gohil.png';
-import polyBg from '../../assets/poly_bg.png';
 import { Mail, Phone } from 'lucide-react';
 
 const experts = [
@@ -16,13 +15,6 @@ const experts = [
 const OurExperts = () => {
   return (
     <section className="py-20 md:py-28 bg-white relative overflow-hidden">
-      
-      {/* Faceted polygon background accent on the right */}
-      <div 
-        className="absolute top-0 right-0 w-80 md:w-96 h-full bg-no-repeat bg-right-top bg-contain pointer-events-none opacity-25 z-0"
-        style={{ backgroundImage: `url('${polyBg}')` }}
-      ></div>
-
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         
         {/* Section Header */}
