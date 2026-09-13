@@ -62,14 +62,6 @@ const Investing = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Background Ambient Glow that shifts based on active tab */}
-      <div 
-        className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-[140px] pointer-events-none transition-all duration-1000 opacity-40 -z-0"
-        style={{
-          backgroundColor: activeTab === 0 ? '#3b82f6' : activeTab === 1 ? '#10b981' : '#f59e0b'
-        }}
-      ></div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
