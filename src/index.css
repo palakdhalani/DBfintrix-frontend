@@ -103,11 +103,15 @@ body {
 /* =========================================================
    SCROLL REVEAL UTILITIES (Triggered by ScrollObserver)
    ========================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
 .reveal {
   opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -118,9 +122,9 @@ body {
 
 .reveal-text {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -129,11 +133,24 @@ body {
   transform: translateY(0);
 }
 
+.reveal-card {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-card.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .reveal-left {
   opacity: 0;
-  transform: translateX(-24px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -144,9 +161,9 @@ body {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(24px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -157,9 +174,9 @@ body {
 
 .reveal-scale {
   opacity: 0;
-  transform: scale(0.96);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.93);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -169,14 +186,17 @@ body {
 }
 
 /* Stagger Delays */
+.delay-50 { transition-delay: 50ms; }
 .delay-75 { transition-delay: 75ms; }
 .delay-100 { transition-delay: 100ms; }
 .delay-150 { transition-delay: 150ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-250 { transition-delay: 250ms; }
 .delay-300 { transition-delay: 300ms; }
+.delay-350 { transition-delay: 350ms; }
 .delay-400 { transition-delay: 400ms; }
 .delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
 
 /* =========================================================
    SMOOTH MICRO-INTERACTIONS (Buttons, Cards, Links)
