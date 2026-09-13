@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import AnimatedWords from '../../Comman components/AnimatedWords';
+import { HelpCircle } from 'lucide-react';
 
 const faqData = [
   {
@@ -36,23 +38,38 @@ const faqData = [
 ];
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="bg-white py-20 md:py-24">
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section className="bg-white py-20 md:py-28 relative overflow-hidden">
+      
+      {/* Background glow */}
+      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 bg-brand-green/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <div className="container mx-auto px-6 max-w-4xl relative z-10">
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark tracking-tight mb-4 uppercase">
-            Frequently Asked <span className="text-brand-green">Questions</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-brand-green text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-100">
+            <HelpCircle className="w-3.5 h-3.5" />
+            <span>Support & Guidance</span>
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-brand-dark tracking-tight mb-4 uppercase">
+            <AnimatedWords 
+              text="Frequently Asked" 
+              className="mr-3"
+            />
+            <span className="animate-text-gradient font-black block sm:inline">
+              Questions
+            </span>
           </h2>
-          <p className="text-gray-500 text-lg">
-            Got questions? We have got answers. Here are some of the most common questions our users ask.
+          <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
+            Got questions? We have got answers. Here are some of the most common questions our partners and investors ask.
           </p>
         </div>
 
@@ -63,20 +80,31 @@ const Faq = () => {
             return (
               <div 
                 key={index} 
-                className={`border rounded-2xl transition-all duration-300 ${
-                  isOpen ? 'border-brand-green shadow-md bg-white' : 'border-gray-200 bg-gray-50 hover:border-gray-300'
+                className={`border rounded-2xl transition-all duration-300 overflow-hidden ${
+                  isOpen 
+                    ? 'border-brand-green shadow-lg shadow-green-900/5 bg-white ring-1 ring-brand-green/20' 
+                    : 'border-gray-200 bg-gray-50/60 hover:border-gray-300 hover:bg-white'
                 }`}
               >
                 <button
-                  className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                  className="w-full flex items-center justify-between p-6 text-left focus:outline-none cursor-pointer group"
                   onClick={() => toggleFaq(index)}
                 >
-                  <span className={`text-lg font-bold ${isOpen ? 'text-brand-green' : 'text-brand-dark'}`}>
-                    {faq.question}
-                  </span>
+                  <div className="flex items-center gap-3.5 pr-4">
+                    <span className={`text-xs font-black px-2.5 py-1 rounded-lg transition-colors ${
+                      isOpen ? 'bg-brand-green text-white' : 'bg-gray-200 text-gray-600 group-hover:bg-brand-dark group-hover:text-white'
+                    }`}>
+                      0{index + 1}
+                    </span>
+                    <span className={`text-base sm:text-lg font-bold transition-colors ${
+                      isOpen ? 'text-brand-green' : 'text-brand-dark group-hover:text-brand-blue'
+                    }`}>
+                      {faq.question}
+                    </span>
+                  </div>
                   <span 
-                    className={`flex items-center justify-center w-8 h-8 rounded-full text-xl transition-transform duration-300 ${
-                      isOpen ? 'bg-brand-green text-white rotate-180' : 'bg-gray-200 text-gray-500'
+                    className={`flex items-center justify-center w-8 h-8 rounded-full text-base font-bold shrink-0 transition-transform duration-300 ${
+                      isOpen ? 'bg-brand-green text-white rotate-180 shadow-md' : 'bg-gray-200 text-gray-500 group-hover:bg-gray-300'
                     }`}
                   >
                     {isOpen ? '−' : '+'}
@@ -84,13 +112,13 @@ const Faq = () => {
                 </button>
                 
                 <div 
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  className={`overflow-hidden transition-all duration-400 ease-in-out ${
                     isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="px-6 pb-6 text-gray-600 leading-relaxed">
+                  <div className="px-6 pb-6 pt-1 text-gray-600 text-sm sm:text-base leading-relaxed border-t border-gray-100/80">
                     {faq.answer}
-                  </p>
+                  </div>
                 </div>
               </div>
             );

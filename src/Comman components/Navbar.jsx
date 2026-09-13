@@ -44,16 +44,17 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white py-4 shadow-md border-b border-gray-100">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-white py-2 sm:py-2.5 shadow-md border-b border-gray-100">
             <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
                 
                 {/* Logo */}
-                <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full overflow-hidden p-1 bg-white border border-gray-200">
-                        <img src={logo} alt="DB Fintrix Logo" className="w-full h-full object-contain rounded-full" />
-                    </div>
-                    <span className="text-brand-dark text-xl font-bold tracking-wider">DBFintrix</span>
-                </div>
+                <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center cursor-pointer group">
+                    <img 
+                        src={logo} 
+                        alt="Dealing Beneficial Fintrix Logo" 
+                        className="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                    />
+                </Link>
 
                 {/* Desktop Navigation Links */}
                 <div className="hidden lg:flex items-center gap-7">
