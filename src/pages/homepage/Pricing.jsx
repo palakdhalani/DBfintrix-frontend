@@ -89,22 +89,25 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pt-6">
           {plans.map((plan) => {
             const isSelected = selectedPlan === plan.id;
             return (
               <div 
                 key={plan.id}
                 onClick={() => setSelectedPlan(plan.id)}
-                className={`bg-white rounded-3xl p-8 sm:p-9 text-left border transition-all duration-300 flex flex-col justify-between group hover-lift shine-overlay cursor-pointer relative ${
+                className={`bg-white rounded-3xl p-8 sm:p-9 text-left border transition-all duration-300 flex flex-col justify-between group hover-lift cursor-pointer relative overflow-visible ${
                   isSelected 
                     ? plan.accentBorder + ' ring-2 ring-brand-green/20' 
                     : 'border-gray-200 hover:border-gray-300 hover:shadow-xl'
                 }`}
               >
+                {/* Inner Shine Reflection Container */}
+                <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none shine-overlay"></div>
+
                 {/* Popular Pill */}
                 {plan.popular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-green text-white text-xs font-extrabold uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-green text-white text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg z-20 whitespace-nowrap">
                     Most Popular
                   </div>
                 )}
