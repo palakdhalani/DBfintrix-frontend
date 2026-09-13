@@ -56,8 +56,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navigation Links */}
-                <div className="hidden lg:flex items-center gap-8">
+                <div className="hidden lg:flex items-center gap-7">
                     <Link to="/" onClick={() => handleNavClick('/')} className={getLinkStyle('/')}>Home</Link>
+                    <Link to="/about" onClick={() => handleNavClick('/about')} className={getLinkStyle('/about')}>About Us</Link>
                     <Link to="/services" onClick={() => handleNavClick('/services')} className={getLinkStyle('/services')}>Services</Link>
                     <Link to="/why-choose-us" onClick={() => handleNavClick('/why-choose-us')} className={getLinkStyle('/why-choose-us')}>Why Choose Us</Link>
                     <Link to="/gallery" onClick={() => handleNavClick('/gallery')} className={getLinkStyle('/gallery')}>Gallery</Link>
@@ -115,6 +116,7 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col py-4 px-6 space-y-4">
                     <Link to="/" onClick={() => handleNavClick('/')} className={getLinkStyle('/')}>Home</Link>
+                    <Link to="/about" onClick={() => handleNavClick('/about')} className={getLinkStyle('/about')}>About Us</Link>
                     <Link to="/services" onClick={() => handleNavClick('/services')} className={getLinkStyle('/services')}>Services</Link>
                     <Link to="/why-choose-us" onClick={() => handleNavClick('/why-choose-us')} className={getLinkStyle('/why-choose-us')}>Why Choose Us</Link>
                     <Link to="/gallery" onClick={() => handleNavClick('/gallery')} className={getLinkStyle('/gallery')}>Gallery</Link>
