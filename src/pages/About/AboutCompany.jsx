@@ -55,20 +55,24 @@ const AboutCompany = () => {
             {/* Paragraphs verbatim from user screenshot */}
             <div className="space-y-5 text-gray-500 text-sm sm:text-[15px] leading-relaxed text-justify font-normal">
               <p>
-At DBfintrix, we are committed to making insurance simple, reliable, and accessible for our customers. With a senior management team having more than 20 years of experience in the insurance industry, we bring extensive knowledge, expertise, and a strong understanding of customer needs.              </p>
-
+Building Financial Confidence Through Experience, Integrity & Service
               <p>
-Over the years, we have built a reputation as a trusted insurance partner by providing professional guidance and customized insurance solutions for individuals, families, and businesses. Our focus is to help customers make informed insurance decisions by offering transparent advice, personalized support, and service excellence.              </p>
-
+DEALING BENIFICIAL FINTRIX PVT. LTD. is a professionally managed financial services company focused on providing reliable and convenient investment-related solutions to individuals and investors.
               <p>
-We understand that every customer has different requirements, whether it is protecting life, health, home, vehicles, or business assets. Our experienced team works closely with customers to provide suitable insurance solutions that align with their goals and provide confidence for the future.              </p>
-
               <p>
-                At INSUREHUB INSURANCE BROKING PRIVATE LIMITED, we believe that trust, integrity, and long-term relationships are the foundation of our services. We are dedicated to delivering a smooth and hassle-free insurance experience while ensuring that our customers receive the right guidance and continuous support whenever they need it.
-              </p>
+With more than 20 years of industry experience, the company has developed a strong foundation built on professionalism, integrity, transparency, and client-centric service. Under the leadership of Mr. Devendrasinh B. Gohil, we are committed to delivering dependable financial services while maintaining a strong focus on client needs and long-term relationships.
+              <p>
+We offer a comprehensive range of services to support our clients across different areas of the investment ecosystem:</br>
+Demat Account Services – Assistance with opening and maintaining Demat accounts for seamless access to the securities market.IPO Services – Support for investors seeking to participate in Initial Public Offerings.
+Mutual Fund Services – Assistance with mutual fund investment solutions aligned with individual financial objectives and preferences.Bond Services – Services and assistance for investors exploring opportunities in the bond market.
+              <p>
+
+We believe that financial services should be built on trust, transparency, knowledge, and responsible service. Our approach is centered on understanding our clients' requirements and providing clear, professional assistance to help them make informed investment decisions.
+With decades of experience, we continue to evolve with the changing financial landscape while maintaining the values that have shaped our business from the beginning.
+              <p>
+At DEALING BENIFICIAL FINTRIX PVT. LTD., our commitment is to provide professional service, transparent communication, and a dependable client experience. We aim to build lasting relationships by putting service quality and client trust at the heart of everything we do.              </p>
                <p>
-               For us, every customer is more than just a policyholder — they are a valued part of our journey. We strive to create lasting relationships by combining industry expertise, personalized service, and a commitment to excellence.
-              </p>
+20+ Years of Experience | Professional Service | Client-Centric Approach | Long-Term Relationships              </p>
             </div>
 
           </div>
