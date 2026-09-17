@@ -55,7 +55,7 @@ const AboutCompany = () => {
             {/* Paragraphs verbatim from user screenshot */}
             <div className="space-y-5 text-gray-500 text-sm sm:text-[15px] leading-relaxed text-justify font-normal">
               <p>
-At INSUREHUB INSURANCE BROKING PRIVATE LIMITED, we are committed to making insurance simple, reliable, and accessible for our customers. With a senior management team having more than 20 years of experience in the insurance industry, we bring extensive knowledge, expertise, and a strong understanding of customer needs.              </p>
+At DBfintrix, we are committed to making insurance simple, reliable, and accessible for our customers. With a senior management team having more than 20 years of experience in the insurance industry, we bring extensive knowledge, expertise, and a strong understanding of customer needs.              </p>
 
               <p>
 Over the years, we have built a reputation as a trusted insurance partner by providing professional guidance and customized insurance solutions for individuals, families, and businesses. Our focus is to help customers make informed insurance decisions by offering transparent advice, personalized support, and service excellence.              </p>
