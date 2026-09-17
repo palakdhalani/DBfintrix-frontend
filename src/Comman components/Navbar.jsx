@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LogOut, User, Menu, X } from 'lucide-react';
-import logo from '../assets/DBFINTTIX_LOGO.jpg.jpeg';
+import logoIcon from '../assets/db-logo-icon.jpg';
+import logoText from '../assets/db-logo-text.jpg';
 import LoginModal from './LoginModal';
 
 const Navbar = () => {
@@ -47,12 +48,20 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 bg-white py-2 sm:py-2.5 shadow-md border-b border-gray-100">
             <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
                 
-                {/* Logo */}
-                <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center cursor-pointer group">
+                {/* Brand Logo: First Icon Logo, then Text Logo on the right */}
+                <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group py-0.5">
+                    {/* First: Main Graphic Icon Logo */}
                     <img 
-                        src={logo} 
-                        alt="Dealing Beneficial Fintrix Logo" 
-                        className="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                        src={logoIcon} 
+                        alt="DB Fintrix Logo" 
+                        className="h-11 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                    />
+                    
+                    {/* Next: Text Logo on the right */}
+                    <img 
+                        src={logoText} 
+                        alt="Dealing Beneficial Fintrix Pvt. Ltd." 
+                        className="h-7 sm:h-9 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-102" 
                     />
                 </Link>
 

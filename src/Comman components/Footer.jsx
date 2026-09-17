@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/DBFINTTIX_LOGO.jpg.jpeg';
+import logo from '../assets/db-logo-icon.jpg';
 
 const Footer = () => {
     return (
