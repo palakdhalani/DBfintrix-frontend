@@ -78,7 +78,14 @@ const Footer = () => {
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li className="flex items-start gap-3">
                                 <span className="text-[#0f9d27] text-lg mt-0.5">📍</span>
-                                <p>123 Financial District,<br />Business Park, City 400001</p>
+                                <a 
+                                    href="https://share.google/kCMt0aPgZekTlLonB" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#0f9d27] transition-colors leading-relaxed"
+                                >
+                                    206, 2nd Floor, Business Bay, 6 Royal Park,<br />Kalawad Road, Rajkot, Gujarat – 360005
+                                </a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-[#0f9d27] text-lg">📞</span>
