@@ -17,7 +17,7 @@ const About = () => {
         {/* Hero Section */}
         <AboutHero />
 
-        {/* About Company Section (Jaysingh Rathod - Director & Principal Officer) */}
+        {/* About Company Section (Mr. Devendrasinh B. Gohil - Director & Principal Officer) */}
         <AboutCompany />
 
         {/* Milestone Stats Counter */}

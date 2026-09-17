@@ -15,7 +15,7 @@ const AboutCompany = () => {
               <div className="relative w-64 sm:w-72 md:w-80 flex items-end justify-center">
                 <img 
                   src={jaysinghImg} 
-                  alt="Jaysingh Rathod - Director & Principal Officer" 
+                  alt="Mr. Devendrasinh B. Gohil - Director & Principal Officer" 
                   className="w-full h-auto object-contain select-none pointer-events-none"
                 />
               </div>
@@ -23,7 +23,7 @@ const AboutCompany = () => {
               {/* Name & Title right below the photo */}
               <div className="text-center mt-3">
                 <h3 className="text-xl sm:text-2xl font-black tracking-wider text-brand-dark uppercase">
-                  JAYSINGH RATHOD
+                  MR. DEVENDRASINH B. GOHIL
                 </h3>
                 <p className="text-xs sm:text-sm font-extrabold tracking-widest text-brand-dark/90 uppercase mt-0.5">
                   DIRECTOR & PRINCIPAL OFFICER

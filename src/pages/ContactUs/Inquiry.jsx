@@ -32,18 +32,18 @@ const Inquiry = () => {
     return (
         <section className="bg-white py-16 md:py-24">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {inquiries.map((item) => (
                         <div 
                             key={item.id}
-                            className="relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-8 bg-gradient-to-br from-green-50/50 to-transparent"
+                            className="relative overflow-hidden rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-6 sm:p-8 bg-gradient-to-br from-green-50/50 to-transparent"
                         >
                             {/* Top decorative gradient matching the image's subtle green glow */}
                             <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-brand-green/5 to-transparent pointer-events-none"></div>
                             
                             <div className="relative z-10">
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="text-brand-dark bg-white p-2 rounded-xl shadow-sm border border-gray-50">
+                                <div className="flex items-center gap-4 mb-5 sm:mb-6">
+                                    <div className="text-brand-dark bg-white p-2.5 rounded-xl shadow-sm border border-gray-50 shrink-0">
                                         {item.icon}
                                     </div>
                                     <h3 className="text-lg font-extrabold text-brand-dark">
@@ -51,18 +51,20 @@ const Inquiry = () => {
                                     </h3>
                                 </div>
                                 
-                                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6 font-medium h-20">
+                                <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6 font-medium sm:min-h-[4rem]">
                                     {item.description}
                                 </p>
                                 
                                 <div className="space-y-2 text-sm md:text-base">
                                     <p className="text-gray-600">
                                         <span className="font-bold text-gray-800">Phone Number: </span> 
-                                        {item.phone}
+                                        <a href={`tel:${item.phone.replace(/\s+/g, '')}`} className="text-brand-dark hover:text-brand-green transition-colors">
+                                            {item.phone}
+                                        </a>
                                     </p>
                                     <p className="text-gray-600">
                                         <span className="font-bold text-gray-800">Email: </span> 
-                                        <a href={`mailto:${item.email}`} className="text-brand-dark hover:text-brand-green transition-colors">
+                                        <a href={`mailto:${item.email}`} className="text-brand-dark hover:text-brand-green transition-colors break-all">
                                             {item.email}
                                         </a>
                                     </p>
