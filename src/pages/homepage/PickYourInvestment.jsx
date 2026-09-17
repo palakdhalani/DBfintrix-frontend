@@ -39,8 +39,8 @@ const PickYourInvestment = () => {
           </p>
         </div>
 
-        {/* All Services Grid (3 Columns) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Core Services Grid (4 Columns) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {servicesData.map((service, index) => (
             <div
               key={service.id}
@@ -99,8 +99,8 @@ const PickYourInvestment = () => {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand-dark">Backed by Licensed IRDAI Partners</h4>
-              <p className="text-xs text-gray-500">Unbiased advice, transparent pricing, and 100% dedicated claims assistance.</p>
+              <h4 className="text-sm font-bold text-brand-dark">Backed by SEBI Registered Depository & Market Intermediaries</h4>
+              <p className="text-xs text-gray-500">Unbiased research, 100% paperless digital onboarding, and dedicated wealth advisory.</p>
             </div>
           </div>
           <Link

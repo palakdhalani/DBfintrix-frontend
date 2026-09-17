@@ -61,11 +61,10 @@ const Footer = () => {
                             <span className="absolute left-0 -bottom-2 w-1/2 h-1 bg-[#0f9d27] rounded-full"></span>
                         </h3>
                         <ul className="space-y-4">
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Demat Account</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Equity Trading</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Mutual Funds</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> IPO Investment</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Wealth Management</a></li>
+                            <li><Link to="/services?service=demat-account" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Demat Account</Link></li>
+                            <li><Link to="/services?service=ipo" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> IPO Investment</Link></li>
+                            <li><Link to="/services?service=mutual-funds" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Mutual Funds</Link></li>
+                            <li><Link to="/services?service=bonds" className="text-gray-400 hover:text-[#0f9d27] transition-colors text-sm flex items-center gap-2"><span>›</span> Bonds</Link></li>
                         </ul>
                     </div>
 

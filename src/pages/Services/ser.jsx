@@ -17,7 +17,7 @@ const ServicesMainPage = () => {
     if (serviceParam && servicesData.some(s => s.id === serviceParam)) {
       return serviceParam;
     }
-    return servicesData[0]?.id || 'bonds';
+    return servicesData[0]?.id || 'demat-account';
   });
 
   // Sync when query param changes
@@ -197,10 +197,10 @@ const ServicesMainPage = () => {
                   </div>
                 </div>
 
-                {/* Coverage Calculation Formula */}
+                {/* Coverage / Returns Calculation Formula */}
                 <div className="p-6 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100">
                   <h3 className="text-base font-bold text-brand-blue uppercase tracking-wide mb-2">
-                    How to calculate coverage?
+                    Evaluation & Return Formula
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
                     {currentService.calculation}
@@ -226,17 +226,17 @@ const ServicesMainPage = () => {
                 <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-[#0a1d42] to-[#004aad] text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
                   <div>
                     <h4 className="text-xl sm:text-2xl font-bold mb-2">
-                      Ready to Protect Your Future?
+                      Ready to Start Your Investment Journey?
                     </h4>
                     <p className="text-blue-100 text-xs sm:text-sm max-w-md">
-                      Get a personalized insurance quote with the lowest premium rates and maximum settlement assurance.
+                      Open your 100% paperless Demat Account or connect with our investment desk for disciplined wealth creation.
                     </p>
                   </div>
                   <Link
                     to="/contact"
                     className="px-8 py-3.5 bg-brand-green hover:bg-green-600 text-white font-bold text-sm rounded-full transition-all shadow-lg hover:shadow-xl shrink-0 flex items-center gap-2"
                   >
-                    <span>Get Free Quote</span>
+                    <span>Start Investing Now</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
