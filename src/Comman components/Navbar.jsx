@@ -61,7 +61,7 @@ const Navbar = () => {
                     <img 
                         src={logoText} 
                         alt="Dealing Beneficial Fintrix Pvt. Ltd." 
-                        className="h-7 sm:h-9 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-102" 
+                        className="h-9 sm:h-11 md:h-15 w-auto object-contain transition-transform duration-300 group-hover:scale-102" 
                     />
                 </Link>
 
