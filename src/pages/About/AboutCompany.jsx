@@ -55,19 +55,19 @@ const AboutCompany = () => {
             {/* Paragraphs verbatim from user screenshot */}
             <div className="space-y-5 text-gray-500 text-sm sm:text-[15px] leading-relaxed text-justify font-normal">
               <p>
-                With our Senior Management team having more than 20 Years of experience at INSUREHUB INSURANCE BROKING PRIVATE LIMITED, we are driven by a single mission: to become the first choice of customers for all their Insurance needs by providing the commitment of best service and excellence. With years of experience in the insurance industry, we have built a reputation for being a trusted partner in safeguarding the things that matter most—your life, home, health, car, and many more insurance services.
-              </p>
+At INSUREHUB INSURANCE BROKING PRIVATE LIMITED, we are committed to making insurance simple, reliable, and accessible for our customers. With a senior management team having more than 20 years of experience in the insurance industry, we bring extensive knowledge, expertise, and a strong understanding of customer needs.              </p>
 
               <p>
-                Our team of experts is dedicated to understand your unique needs, offering personalized insurance solutions that fit your lifestyle. Whether you're seeking coverage for your family, business, or personal assets, we provide tailored options that give you the confidence to face the future. We pride ourselves on transparency, integrity, and customer-centric service. From offering advice on the best coverage options to providing ongoing support, we're here every step of the way. Our mission is not just to protect your belongings but to build lasting relationships based on trust and reliability.
-              </p>
+Over the years, we have built a reputation as a trusted insurance partner by providing professional guidance and customized insurance solutions for individuals, families, and businesses. Our focus is to help customers make informed insurance decisions by offering transparent advice, personalized support, and service excellence.              </p>
 
               <p>
-                Here for us you are more than just a client—you're part of our family. We focus on making insurance simple, accessible, and stress-free, so you can focus on what truly matters in life.
-              </p>
+We understand that every customer has different requirements, whether it is protecting life, health, home, vehicles, or business assets. Our experienced team works closely with customers to provide suitable insurance solutions that align with their goals and provide confidence for the future.              </p>
 
               <p>
-                Let us take care of the complexities, while you enjoy the peace of mind knowing you're in good hands.
+                At INSUREHUB INSURANCE BROKING PRIVATE LIMITED, we believe that trust, integrity, and long-term relationships are the foundation of our services. We are dedicated to delivering a smooth and hassle-free insurance experience while ensuring that our customers receive the right guidance and continuous support whenever they need it.
+              </p>
+               <p>
+               For us, every customer is more than just a policyholder — they are a valued part of our journey. We strive to create lasting relationships by combining industry expertise, personalized service, and a commitment to excellence.
               </p>
             </div>
 
