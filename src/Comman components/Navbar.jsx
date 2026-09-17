@@ -46,7 +46,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-white py-2 sm:py-2.5 shadow-md border-b border-gray-100">
-            <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
+            <div className="container mx-auto px-6 max-w-8xl flex items-center justify-between">
                 
                 {/* Brand Logo: First Icon Logo, then Text Logo on the right */}
                 <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group py-0.5">
