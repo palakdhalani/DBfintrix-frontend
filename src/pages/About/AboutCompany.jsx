@@ -52,27 +52,49 @@ const AboutCompany = () => {
               <span className="text-sky-500 font-bold tracking-widest text-base">‹‹‹</span>
             </div>
 
-            {/* Paragraphs verbatim from user screenshot */}
-            <div className="space-y-5 text-gray-500 text-sm sm:text-[15px] leading-relaxed text-justify font-normal">
-              <p>
-Building Financial Confidence Through Experience, Integrity & Service
-              <p>
-DEALING BENIFICIAL FINTRIX PVT. LTD. is a professionally managed financial services company focused on providing reliable and convenient investment-related solutions to individuals and investors.
-              <p>
-              <p>
-With more than 20 years of industry experience, the company has developed a strong foundation built on professionalism, integrity, transparency, and client-centric service. Under the leadership of Mr. Devendrasinh B. Gohil, we are committed to delivering dependable financial services while maintaining a strong focus on client needs and long-term relationships.
-              <p>
-We offer a comprehensive range of services to support our clients across different areas of the investment ecosystem:</br>
-Demat Account Services – Assistance with opening and maintaining Demat accounts for seamless access to the securities market.IPO Services – Support for investors seeking to participate in Initial Public Offerings.
-Mutual Fund Services – Assistance with mutual fund investment solutions aligned with individual financial objectives and preferences.Bond Services – Services and assistance for investors exploring opportunities in the bond market.
-              <p>
+            {/* Paragraphs */}
+            <div className="space-y-4 text-gray-600 text-sm sm:text-[15px] leading-relaxed text-justify font-normal">
+              <h4 className="text-lg sm:text-xl font-extrabold text-brand-dark leading-snug">
+                Building Financial Confidence Through Experience, Integrity & Service
+              </h4>
 
-We believe that financial services should be built on trust, transparency, knowledge, and responsible service. Our approach is centered on understanding our clients' requirements and providing clear, professional assistance to help them make informed investment decisions.
-With decades of experience, we continue to evolve with the changing financial landscape while maintaining the values that have shaped our business from the beginning.
               <p>
-At DEALING BENIFICIAL FINTRIX PVT. LTD., our commitment is to provide professional service, transparent communication, and a dependable client experience. We aim to build lasting relationships by putting service quality and client trust at the heart of everything we do.              </p>
-               <p>
-20+ Years of Experience | Professional Service | Client-Centric Approach | Long-Term Relationships              </p>
+                <strong className="text-brand-dark font-bold">DEALING BENEFICIAL FINTRIX PVT. LTD.</strong> is a professionally managed financial services company focused on providing reliable and convenient investment-related solutions to individuals and investors.
+              </p>
+
+              <p>
+                With more than 20 years of industry experience, the company has developed a strong foundation built on professionalism, integrity, transparency, and client-centric service. Under the leadership of <strong className="text-brand-dark font-bold">Mr. Devendrasinh B. Gohil</strong>, we are committed to delivering dependable financial services while maintaining a strong focus on client needs and long-term relationships.
+              </p>
+
+              <div>
+                <p className="font-semibold text-brand-dark mb-2">
+                  We offer a comprehensive range of services to support our clients across different areas of the investment ecosystem:
+                </p>
+                <ul className="space-y-1.5 pl-4 list-disc text-gray-600 text-xs sm:text-sm">
+                  <li><strong className="text-brand-dark">Demat Account Services</strong> – Assistance with opening and maintaining Demat accounts for seamless access to the securities market.</li>
+                  <li><strong className="text-brand-dark">IPO Services</strong> – Support for investors seeking to participate in Initial Public Offerings.</li>
+                  <li><strong className="text-brand-dark">Mutual Fund Services</strong> – Assistance with mutual fund investment solutions aligned with individual financial objectives and preferences.</li>
+                  <li><strong className="text-brand-dark">Bond Services</strong> – Services and assistance for investors exploring opportunities in the bond market.</li>
+                </ul>
+              </div>
+
+              <p>
+                We believe that financial services should be built on trust, transparency, knowledge, and responsible service. Our approach is centered on understanding our clients' requirements and providing clear, professional assistance to help them make informed investment decisions. With decades of experience, we continue to evolve with the changing financial landscape while maintaining the values that have shaped our business from the beginning.
+              </p>
+
+              <p>
+                At DEALING BENEFICIAL FINTRIX PVT. LTD., our commitment is to provide professional service, transparent communication, and a dependable client experience. We aim to build lasting relationships by putting service quality and client trust at the heart of everything we do.
+              </p>
+
+              <div className="pt-2 border-t border-gray-100 font-bold text-xs sm:text-sm text-brand-green flex flex-wrap gap-2 items-center">
+                <span>20+ Years of Experience</span>
+                <span>•</span>
+                <span>Professional Service</span>
+                <span>•</span>
+                <span>Client-Centric Approach</span>
+                <span>•</span>
+                <span>Long-Term Relationships</span>
+              </div>
             </div>
 
           </div>
