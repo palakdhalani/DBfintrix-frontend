@@ -1,3 +1,8 @@
+import dematImg from '../../assets/demat_service.jpg';
+import ipoImg from '../../assets/ipo_service.jpg';
+import mutualFundsImg from '../../assets/mutual_funds_service.jpg';
+import bondsImg from '../../assets/bonds_service.jpg';
+
 export const servicesData = [
   {
     id: 'demat-account',
@@ -5,7 +10,7 @@ export const servicesData = [
     badge: 'Zero AMC & 100% Free',
     description: "Open a 100% paperless Demat Account with zero AMC for the first year, instant e-KYC in 5 minutes, and secure CDSL digital depository protection.",
     tag: 'SERVICES / INVESTORS',
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80',
+    image: dematImg,
     subtitle: "Your Secure Gateway to Indian Capital Markets",
     intro: "A Demat (Dematerialized) account converts physical share certificates into electronic book entries. It acts like a digital bank locker for your shares, mutual funds, sovereign bonds, and exchange-traded securities.",
     whatIs: "A Demat account holds financial securities in electronic form with central depositories (CDSL or NSDL) registered under SEBI. It eliminates the risks of physical loss, forgery, theft, and delays associated with paper certificates.",
@@ -51,7 +56,7 @@ export const servicesData = [
     badge: 'Primary Market',
     description: "Apply seamlessly for the latest Mainboard & SME Initial Public Offerings (IPOs) with instant UPI mandate and in-depth company research.",
     tag: 'SERVICES / INVESTORS',
-    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80',
+    image: ipoImg,
     subtitle: "Early-Stage Access to India's Fastest Growing Companies",
     intro: "Initial Public Offerings (IPOs) offer retail and HNI investors the opportunity to subscribe to shares of high-potential private companies before they list on the stock exchanges, capturing first-day listing gains and multi-year compound growth.",
     whatIs: "An IPO is the process through which an unlisted private corporation raises equity capital from institutional and retail public investors, listing its shares on stock exchanges like the NSE and BSE for public trading.",
@@ -97,7 +102,7 @@ export const servicesData = [
     badge: 'Wealth Compounding',
     description: "Zero-commission Direct Mutual Funds and disciplined SIP investing across equity, debt, hybrid, and index funds curated by expert advisors.",
     tag: 'SERVICES / INVESTORS',
-    image: 'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=1200&q=80',
+    image: mutualFundsImg,
     subtitle: "Disciplined SIPs & Direct Mutual Fund Growth",
     intro: "Mutual funds pool capital from thousands of investors to invest in a professionally managed portfolio of equities, government securities, and corporate bonds, delivering optimal diversification with minimal initial capital.",
     whatIs: "A mutual fund is an investment vehicle managed by an Asset Management Company (AMC) registered with SEBI. Professional fund managers allocate the pooled capital into diversified securities based on stated fund objectives.",
@@ -143,7 +148,7 @@ export const servicesData = [
     badge: 'Fixed Income & Safety',
     description: "Invest in secure government and corporate bonds with guaranteed regular coupon yields, sovereign safety, and capital preservation.",
     tag: 'SERVICES / INVESTORS',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80',
+    image: bondsImg,
     subtitle: "Assured Regular Income & Capital Preservation",
     intro: "Bonds represent an essential pillar of a balanced investment portfolio. By lending capital to government entities or top-rated corporations, you secure predictable coupon payouts while insulating your capital from equity market volatility.",
     whatIs: "A bond is a fixed-income debt instrument under which an investor loans funds to an entity (corporate or governmental) that borrows the funds for a defined period at a fixed or floating interest rate (coupon).",
