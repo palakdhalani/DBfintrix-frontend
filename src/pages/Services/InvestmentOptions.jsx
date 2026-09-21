@@ -19,11 +19,13 @@ const options = [
     name: "Mutual Funds",
     badge: "SIP & Wealth",
     icon: PiggyBank,
-    iconStyle: "bg-emerald-100/90 text-emerald-700 border-emerald-300/80 group-hover:bg-emerald-200 group-hover:text-emerald-800",
-    badgeStyle: "bg-emerald-100/80 text-emerald-800 border-emerald-300/80 group-hover:bg-emerald-200 group-hover:border-emerald-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-emerald-50 hover:via-teal-50 hover:to-emerald-100/70 hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-900/10",
-    bulletColor: "text-emerald-600",
-    bottomArrowBg: "bg-emerald-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#062e16] hover:via-[#0a4821] hover:to-[#0f9d27] hover:shadow-emerald-900/40",
+    iconDefault: "text-brand-green bg-emerald-50 border-emerald-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
+    badgeDefault: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
+    accentBullet: "text-emerald-400 group-hover:text-emerald-300",
+    bottomArrowBg: "bg-emerald-600 group-hover:bg-white group-hover:text-emerald-700",
     lines: [
       "Zero commission on Direct Mutual Funds",
       "Disciplined compounding monthly SIPs from ₹500",
@@ -35,11 +37,13 @@ const options = [
     name: "Stocks",
     badge: "Equity & Delivery",
     icon: TrendingUp,
-    iconStyle: "bg-blue-100/90 text-blue-700 border-blue-300/80 group-hover:bg-blue-200 group-hover:text-blue-800",
-    badgeStyle: "bg-blue-100/80 text-blue-800 border-blue-300/80 group-hover:bg-blue-200 group-hover:border-blue-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-blue-50 hover:via-sky-50 hover:to-cyan-100/70 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-900/10",
-    bulletColor: "text-blue-600",
-    bottomArrowBg: "bg-blue-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#0a1d42] hover:via-[#0c285d] hover:to-[#004aad] hover:shadow-blue-900/40",
+    iconDefault: "text-brand-dark bg-blue-50 border-blue-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-cyan-300 group-hover:border-white/20",
+    badgeDefault: "bg-blue-50 text-blue-700 border-blue-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-cyan-200 group-hover:border-white/20",
+    accentBullet: "text-cyan-400 group-hover:text-cyan-300",
+    bottomArrowBg: "bg-blue-600 group-hover:bg-white group-hover:text-blue-700",
     lines: [
       "₹0 brokerage on long-term equity delivery investments",
       "Ultra-low latency live NSE & BSE tick-by-tick feeds",
@@ -51,11 +55,13 @@ const options = [
     name: "Futures & Options",
     badge: "F&O Trading",
     icon: BarChart3,
-    iconStyle: "bg-purple-100/90 text-purple-700 border-purple-300/80 group-hover:bg-purple-200 group-hover:text-purple-800",
-    badgeStyle: "bg-purple-100/80 text-purple-800 border-purple-300/80 group-hover:bg-purple-200 group-hover:border-purple-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-purple-50 hover:via-fuchsia-50 hover:to-indigo-100/70 hover:border-purple-400 hover:shadow-xl hover:shadow-purple-900/10",
-    bulletColor: "text-purple-600",
-    bottomArrowBg: "bg-purple-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#1b0b30] hover:via-[#361358] hover:to-[#7c3aed] hover:shadow-purple-900/40",
+    iconDefault: "text-purple-700 bg-purple-50 border-purple-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-purple-200 group-hover:border-white/20",
+    badgeDefault: "bg-purple-50 text-purple-700 border-purple-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-purple-200 group-hover:border-white/20",
+    accentBullet: "text-purple-400 group-hover:text-purple-300",
+    bottomArrowBg: "bg-purple-600 group-hover:bg-white group-hover:text-purple-700",
     lines: [
       "Flat ₹20 per executed trade across all F&O segments",
       "Real-time interactive Option Chains with Greeks, PCR & OI",
@@ -67,11 +73,13 @@ const options = [
     name: "IPO",
     badge: "New Listings",
     icon: Rocket,
-    iconStyle: "bg-orange-100/90 text-orange-700 border-orange-300/80 group-hover:bg-orange-200 group-hover:text-orange-800",
-    badgeStyle: "bg-orange-100/80 text-orange-800 border-orange-300/80 group-hover:bg-orange-200 group-hover:border-orange-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-orange-50 hover:via-amber-50 hover:to-yellow-100/70 hover:border-orange-400 hover:shadow-xl hover:shadow-orange-900/10",
-    bulletColor: "text-orange-600",
-    bottomArrowBg: "bg-orange-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#2e1003] hover:via-[#572205] hover:to-[#ea580c] hover:shadow-orange-900/40",
+    iconDefault: "text-orange-600 bg-orange-50 border-orange-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
+    badgeDefault: "bg-orange-50 text-orange-700 border-orange-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
+    accentBullet: "text-amber-400 group-hover:text-amber-300",
+    bottomArrowBg: "bg-orange-600 group-hover:bg-white group-hover:text-orange-700",
     lines: [
       "1-Click instant UPI mandate application in under 60 seconds",
       "Real-time live subscription numbers & GMP alert updates",
@@ -83,11 +91,13 @@ const options = [
     name: "Commodities",
     badge: "MCX Exchange",
     icon: Boxes,
-    iconStyle: "bg-amber-100/90 text-amber-700 border-amber-300/80 group-hover:bg-amber-200 group-hover:text-amber-800",
-    badgeStyle: "bg-amber-100/80 text-amber-800 border-amber-300/80 group-hover:bg-amber-200 group-hover:border-amber-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-amber-50 hover:via-yellow-50 hover:to-orange-100/70 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-900/10",
-    bulletColor: "text-amber-600",
-    bottomArrowBg: "bg-amber-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#1f1604] hover:via-[#422d08] hover:to-[#d97706] hover:shadow-yellow-900/40",
+    iconDefault: "text-amber-700 bg-amber-50 border-amber-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-yellow-200 group-hover:border-white/20",
+    badgeDefault: "bg-amber-50 text-amber-700 border-amber-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-yellow-200 group-hover:border-white/20",
+    accentBullet: "text-yellow-400 group-hover:text-yellow-300",
+    bottomArrowBg: "bg-amber-600 group-hover:bg-white group-hover:text-amber-700",
     lines: [
       "Trade Gold, Silver, Crude Oil & Natural Gas on MCX",
       "High leverage intraday trading with automated stop-loss",
@@ -99,11 +109,13 @@ const options = [
     name: "Currencies",
     badge: "Global Forex",
     icon: ArrowRightLeft,
-    iconStyle: "bg-teal-100/90 text-teal-700 border-teal-300/80 group-hover:bg-teal-200 group-hover:text-teal-800",
-    badgeStyle: "bg-teal-100/80 text-teal-800 border-teal-300/80 group-hover:bg-teal-200 group-hover:border-teal-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-teal-50 hover:via-emerald-50 hover:to-cyan-100/70 hover:border-teal-400 hover:shadow-xl hover:shadow-teal-900/10",
-    bulletColor: "text-teal-600",
-    bottomArrowBg: "bg-teal-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#042827] hover:via-[#094643] hover:to-[#0d9488] hover:shadow-teal-900/40",
+    iconDefault: "text-teal-700 bg-teal-50 border-teal-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
+    badgeDefault: "bg-teal-50 text-teal-700 border-teal-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
+    accentBullet: "text-teal-400 group-hover:text-teal-300",
+    bottomArrowBg: "bg-teal-600 group-hover:bg-white group-hover:text-teal-700",
     lines: [
       "Trade major currency pairs: USD-INR, EUR-INR, GBP-INR & JPY-INR",
       "Deep global liquidity with ultra-low competitive spreads",
@@ -115,11 +127,13 @@ const options = [
     name: "Derivatives",
     badge: "Smart Hedging",
     icon: Activity,
-    iconStyle: "bg-rose-100/90 text-rose-700 border-rose-300/80 group-hover:bg-rose-200 group-hover:text-rose-800",
-    badgeStyle: "bg-rose-100/80 text-rose-800 border-rose-300/80 group-hover:bg-rose-200 group-hover:border-rose-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-rose-50 hover:via-pink-50 hover:to-red-100/70 hover:border-rose-400 hover:shadow-xl hover:shadow-rose-900/10",
-    bulletColor: "text-rose-600",
-    bottomArrowBg: "bg-rose-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#2a0614] hover:via-[#520d2d] hover:to-[#e11d48] hover:shadow-rose-900/40",
+    iconDefault: "text-rose-600 bg-rose-50 border-rose-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-rose-200 group-hover:border-white/20",
+    badgeDefault: "bg-rose-50 text-rose-700 border-rose-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-rose-200 group-hover:border-white/20",
+    accentBullet: "text-rose-400 group-hover:text-rose-300",
+    bottomArrowBg: "bg-rose-600 group-hover:bg-white group-hover:text-rose-700",
     lines: [
       "High-yield index & stock derivative contracts with high liquidity",
       "Instant margin pledge facility using existing stock holdings",
@@ -131,11 +145,13 @@ const options = [
     name: "Bonds & Debentures",
     badge: "Fixed Income",
     icon: ShieldCheck,
-    iconStyle: "bg-sky-100/90 text-sky-700 border-sky-300/80 group-hover:bg-sky-200 group-hover:text-sky-800",
-    badgeStyle: "bg-sky-100/80 text-sky-800 border-sky-300/80 group-hover:bg-sky-200 group-hover:border-sky-400",
-    cardHoverBg: "hover:bg-gradient-to-br hover:from-sky-50 hover:via-blue-50 hover:to-indigo-100/70 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-900/10",
-    bulletColor: "text-sky-600",
-    bottomArrowBg: "bg-sky-600 text-white",
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#0f172a] hover:via-[#1e293b] hover:to-[#0284c7] hover:shadow-sky-900/40",
+    iconDefault: "text-brand-dark bg-slate-100 border-slate-200",
+    iconHover: "group-hover:bg-white/15 group-hover:text-sky-300 group-hover:border-white/20",
+    badgeDefault: "bg-slate-100 text-slate-700 border-slate-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-sky-200 group-hover:border-white/20",
+    accentBullet: "text-sky-400 group-hover:text-sky-300",
+    bottomArrowBg: "bg-sky-600 group-hover:bg-white group-hover:text-sky-700",
     lines: [
       "High-yield Sovereign Gold Bonds (SGB) & Corporate Debentures",
       "Guaranteed predictable periodic interest credited to your bank",
@@ -159,7 +175,7 @@ const InvestmentOptions = () => {
 
   return (
     <section className="bg-gradient-to-b from-[#f8fafc] via-[#f1f5f9] to-[#ffffff] py-20 md:py-28 relative overflow-hidden">
-      {/* Decorative ambient background glows */}
+      {/* Ambient background glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-green/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none translate-y-1/2"></div>
 
@@ -196,7 +212,7 @@ const InvestmentOptions = () => {
           </div>
         </div>
 
-        {/* Grid of Cards */}
+        {/* Grid of Cards - Styled like Hero Section 3 Cards with Butter-Smooth Height Animation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {options.map((item) => {
             const IconComponent = item.icon;
@@ -207,43 +223,51 @@ const InvestmentOptions = () => {
                 key={item.id}
                 onClick={() => setActiveCard(isSelected ? null : item.id)}
                 className={`
-                  group relative bg-white border border-gray-200/90 rounded-3xl p-6 sm:p-7
-                  flex flex-col justify-between text-left shadow-sm
-                  transition-all duration-400 ease-out cursor-pointer overflow-hidden
-                  hover:-translate-y-2 hover:shadow-xl ${item.cardHoverBg}
-                  ${isSelected ? `-translate-y-2 shadow-xl ${item.cardHoverBg}` : ''}
+                  bg-white rounded-3xl p-7 sm:p-8 shadow-xl border border-gray-100/90
+                  transition-all duration-500 ease-out flex flex-col justify-between items-start
+                  group hover-lift shine-overlay cursor-pointer relative overflow-hidden
+                  ${item.hoverBg} hover:border-transparent hover:shadow-2xl
+                  ${isSelected ? `${item.hoverBg} -translate-y-2 shadow-2xl border-transparent` : ''}
                 `}
               >
+                {/* Subtle glass ambient glow on hover */}
+                <div className="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-white/10 blur-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
                 {/* Card Top: Icon & Badge */}
-                <div>
-                  <div className="flex items-center justify-between gap-3 mb-5">
-                    {/* Modern Glassmorphic Icon Badge */}
-                    <div 
+                <div className="w-full">
+                  <div className="flex items-center justify-between gap-3 mb-5 w-full">
+                    {/* Icon Container with Smooth Scale & Rotate */}
+                    <span 
                       className={`
                         w-14 h-14 rounded-2xl flex items-center justify-center border shadow-xs
-                        transition-all duration-400 group-hover:scale-110 group-hover:rotate-3 backdrop-blur-md
-                        ${item.iconStyle}
-                        ${isSelected ? 'scale-110 rotate-3' : ''}
+                        transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-3
+                        ${item.iconDefault} ${item.iconHover}
+                        ${isSelected ? 'bg-white/15 text-white border-white/20 scale-110 rotate-3' : ''}
                       `}
                     >
-                      <IconComponent className="w-7 h-7 transition-all duration-300" strokeWidth={2.3} />
-                    </div>
+                      <IconComponent className="w-7 h-7 transition-all duration-300" strokeWidth={2.2} />
+                    </span>
 
                     {/* Category Badge */}
                     <span 
                       className={`
                         px-3 py-1 rounded-full text-[11px] font-extrabold tracking-wide uppercase border
-                        transition-all duration-300
-                        ${item.badgeStyle}
+                        transition-all duration-400
+                        ${item.badgeDefault} ${item.badgeHover}
+                        ${isSelected ? 'bg-white/15 text-white border-white/20' : ''}
                       `}
                     >
                       {item.badge}
                     </span>
                   </div>
 
-                  {/* Title - Pure crisp dark text */}
+                  {/* Title */}
                   <h3 
-                    className="text-xl font-extrabold text-gray-900 mb-1.5 transition-colors duration-300"
+                    className={`
+                      text-xl font-extrabold text-[#0a1d42] mb-1.5 transition-colors duration-400
+                      group-hover:text-white
+                      ${isSelected ? 'text-white' : ''}
+                    `}
                   >
                     {item.name}
                   </h3>
@@ -258,45 +282,54 @@ const InvestmentOptions = () => {
                     `}
                   >
                     <span>Explore benefits</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-brand-green" />
+                    <ArrowRight className="w-3.5 h-3.5 text-brand-green group-hover:translate-x-1 transition-transform" />
                   </div>
 
-                  {/* Hover Reveal: 3 Key Informative Lines (Font color BLACK) */}
+                  {/* Butter-Smooth Height Expansion for the 3 Lines */}
                   <div 
                     className={`
-                      overflow-hidden transition-all duration-500 ease-out
-                      max-h-0 opacity-0 group-hover:max-h-64 group-hover:opacity-100 group-hover:mt-4
-                      ${isSelected ? 'max-h-64 opacity-100 mt-4' : ''}
+                      w-full grid transition-all duration-500 ease-out
+                      ${isSelected ? 'grid-rows-[1fr] mt-4' : 'grid-rows-[0fr] group-hover:grid-rows-[1fr] group-hover:mt-4'}
                     `}
                   >
-                    <div className="pt-3 border-t border-gray-300/80 space-y-2.5">
-                      {item.lines.map((line, idx) => (
-                        <div 
-                          key={idx} 
-                          className="flex items-start gap-2.5 text-xs leading-snug transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300"
-                          style={{ transitionDelay: `${idx * 50}ms` }}
-                        >
-                          <CheckCircle2 className={`w-3.5 h-3.5 mt-0.5 shrink-0 ${item.bulletColor}`} />
-                          <span className="font-bold text-gray-900 tracking-tight">{line}</span>
-                        </div>
-                      ))}
+                    <div className="overflow-hidden">
+                      <div className="pt-3.5 border-t border-gray-100 group-hover:border-white/15 space-y-2.5 transition-colors duration-400">
+                        {item.lines.map((line, idx) => (
+                          <div 
+                            key={idx} 
+                            className={`
+                              flex items-start gap-2.5 text-xs sm:text-sm leading-snug font-medium
+                              transition-all duration-400
+                              ${isSelected 
+                                ? 'translate-y-0 opacity-100 text-white/95' 
+                                : 'text-gray-700 group-hover:text-white/95 transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100'
+                              }
+                            `}
+                            style={{ transitionDelay: `${idx * 60}ms` }}
+                          >
+                            <CheckCircle2 className={`w-4 h-4 mt-0.5 shrink-0 ${item.accentBullet} transition-colors`} />
+                            <span>{line}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Card Bottom Link */}
+                {/* Butter-Smooth Card Bottom Link */}
                 <div 
                   className={`
-                    mt-5 pt-3 border-t border-gray-300/80 flex items-center justify-between
-                    text-xs font-bold text-gray-900
-                    overflow-hidden transition-all duration-400
-                    max-h-0 opacity-0 group-hover:max-h-12 group-hover:opacity-100
-                    ${isSelected ? 'max-h-12 opacity-100' : ''}
+                    w-full grid transition-all duration-500 ease-out mt-2
+                    ${isSelected ? 'grid-rows-[1fr]' : 'grid-rows-[0fr] group-hover:grid-rows-[1fr]'}
                   `}
                 >
-                  <span className="tracking-wide text-gray-800 font-bold">Start with DB Fintrix</span>
-                  <div className={`w-6 h-6 rounded-full ${item.bottomArrowBg} flex items-center justify-center group-hover:translate-x-1 transition-transform shadow-xs`}>
-                    <ArrowRight className="w-3.5 h-3.5" />
+                  <div className="overflow-hidden">
+                    <div className="pt-3.5 border-t border-gray-100 group-hover:border-white/15 flex items-center justify-between text-xs font-bold text-gray-700 group-hover:text-white transition-colors duration-400">
+                      <span className="tracking-wide">Explore & Open Demat</span>
+                      <div className={`w-7 h-7 rounded-full ${item.bottomArrowBg} flex items-center justify-center group-hover:translate-x-1.5 transition-all duration-300 shadow-md`}>
+                        <ArrowRight className="w-3.5 h-3.5 text-white" />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -331,4 +364,3 @@ const InvestmentOptions = () => {
 };
 
 export default InvestmentOptions;
-
