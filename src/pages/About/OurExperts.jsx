@@ -1,5 +1,6 @@
 import React from 'react';
 import bhargavibaImg from '../../assets/bhargaviba_gohil.png';
+import devendrasinhImg from '../../assets/devendrasinh_gohil.png';
 
 const experts = [
   {
@@ -8,6 +9,13 @@ const experts = [
     image: bhargavibaImg,
     badge: 'Executive Leadership',
     bio: 'Guiding corporate strategy and client engagement with focused expertise in financial and insurance broking governance.'
+  },
+  {
+    name: 'MR. DEVENDRASINH B. GOHIL',
+    role: 'Director & Principal Officer',
+    image: devendrasinhImg,
+    badge: 'Executive Leadership',
+    bio: 'Leading DB Fintrix with over 20 years of proven capital markets experience, driving strategic growth and client-centric investment excellence.'
   }
 ];
 
@@ -41,12 +49,12 @@ const OurExperts = () => {
           </div>
         </div>
 
-        {/* Experts Card Container (Centered) */}
-        <div className="flex justify-center">
+        {/* Experts Card Container (2-Column Balanced Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto justify-center">
           {experts.map((expert, index) => (
             <div 
               key={index}
-              className="group relative bg-white rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(10,29,66,0.12)] reveal w-full max-w-sm sm:max-w-md"
+              className="group relative bg-white rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(10,29,66,0.12)] reveal w-full"
             >
               {/* Outer Decorative Dashed Frame */}
               <div className="absolute inset-0 rounded-3xl border-2 border-dashed border-gray-200 group-hover:border-brand-green/40 transition-colors pointer-events-none -z-0"></div>

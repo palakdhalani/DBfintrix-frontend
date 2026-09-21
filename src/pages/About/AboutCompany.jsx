@@ -1,5 +1,5 @@
 import React from 'react';
-import jaysinghImg from '../../assets/jaysingh_rathod.png';
+import devendrasinhImg from '../../assets/devendrasinh_gohil.png';
 
 const AboutCompany = () => {
   return (
@@ -14,7 +14,7 @@ const AboutCompany = () => {
               {/* Clean Image without box/border/gradient */}
               <div className="relative w-64 sm:w-72 md:w-80 flex items-end justify-center">
                 <img 
-                  src={jaysinghImg} 
+                  src={devendrasinhImg} 
                   alt="Mr. Devendrasinh B. Gohil - Director & Principal Officer" 
                   className="w-full h-auto object-contain select-none pointer-events-none"
                 />
