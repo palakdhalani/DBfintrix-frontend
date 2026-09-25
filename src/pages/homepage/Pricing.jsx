@@ -75,7 +75,7 @@ const Pricing = () => {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1a2c4c] tracking-tight mb-4">
             <AnimatedWords 
-              text="Transparent pricing." 
+              text="Transparent pricing" 
               className="mr-2"
             />
             <span className="animate-text-gradient font-black block sm:inline">
