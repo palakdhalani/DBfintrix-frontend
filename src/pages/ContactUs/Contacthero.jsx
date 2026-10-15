@@ -13,7 +13,7 @@ const contactDetails = [
                 href="tel:+919033600411" 
                 className="text-gray-700 hover:text-brand-green transition-colors font-semibold block text-base"
             >
-                +91 90336 00411
+                +91 90336 00412
             </a>
         ),
         subtitle: "Direct Calling Desk"
