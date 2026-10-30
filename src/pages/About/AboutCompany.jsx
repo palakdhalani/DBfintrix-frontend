@@ -59,32 +59,33 @@ const AboutCompany = () => {
               </h4>
 
               <p>
-                <strong className="text-brand-dark font-bold">DEALING BENEFICIAL FINTRIX PVT. LTD.</strong> is a professionally managed financial services company focused on providing reliable and convenient investment-related solutions to individuals and investors.
+                <strong className="text-brand-dark font-bold">Mr. Devendrasinh B. Gohil</strong> is a dynamic and visionary leader serving as Director of Dealing Beneficial Fintrix Pvt. Ltd., a company focused on providing stock market and financial services. He holds a Bachelor’s degree in Law and a Master’s degree in Social Work from Saurashtra University, Gujarat, India.
               </p>
 
               <p>
-                With more than 20 years of industry experience, the company has developed a strong foundation built on professionalism, integrity, transparency, and client-centric service. Under the leadership of <strong className="text-brand-dark font-bold">Mr. Devendrasinh B. Gohil</strong>, we are committed to delivering dependable financial services while maintaining a strong focus on client needs and long-term relationships.
+                With extensive experience in the corporate sector, Mr. Gohil brings strong leadership, strategic thinking, and management expertise to the organization. He plays an important role in guiding the company’s business strategy, overseeing operational activities, developing customer-focused service policies, and promoting sustainable business growth.
               </p>
 
-              <div>
-                <p className="font-semibold text-brand-dark mb-2">
-                  We offer a comprehensive range of services to support our clients across different areas of the investment ecosystem:
+              <p>
+                His vision is to make stock market services more accessible by supporting clients with services such as demat account assistance, equity and derivatives trading, mutual fund services, IPO-related services, market research, and investment guidance, subject to the company’s applicable registrations and authorizations.
+              </p>
+
+              <p>
+                Mr. Gohil believes in building long-term relationships through transparency, customer satisfaction, professional service, and continuous improvement. His commitment to empowering clients and employees through knowledge, guidance, and effective management helps drive the company toward its mission of delivering reliable and customer-oriented financial services.
+              </p>
+
+              <p>
+                As a customer-focused leader, he values client feedback and encourages a culture of trust, accountability, and professional excellence throughout the organization.
+              </p>
+
+              <div className="p-4 rounded-xl bg-emerald-50/80 border-l-4 border-brand-green mt-2">
+                <span className="text-brand-green font-bold uppercase tracking-wider text-xs block mb-1">
+                  His Vision
+                </span>
+                <p className="text-sm font-semibold text-brand-dark italic">
+                  "To empower investors with knowledge, quality service, and a customer-first approach."
                 </p>
-                <ul className="space-y-1.5 pl-4 list-disc text-gray-600 text-xs sm:text-sm">
-                  <li><strong className="text-brand-dark">Demat Account Services</strong> – Assistance with opening and maintaining Demat accounts for seamless access to the securities market.</li>
-                  <li><strong className="text-brand-dark">IPO Services</strong> – Support for investors seeking to participate in Initial Public Offerings.</li>
-                  <li><strong className="text-brand-dark">Mutual Fund Services</strong> – Assistance with mutual fund investment solutions aligned with individual financial objectives and preferences.</li>
-                  <li><strong className="text-brand-dark">Bond Services</strong> – Services and assistance for investors exploring opportunities in the bond market.</li>
-                </ul>
               </div>
-
-              <p>
-                We believe that financial services should be built on trust, transparency, knowledge, and responsible service. Our approach is centered on understanding our clients' requirements and providing clear, professional assistance to help them make informed investment decisions. With decades of experience, we continue to evolve with the changing financial landscape while maintaining the values that have shaped our business from the beginning.
-              </p>
-
-              <p>
-                At DEALING BENEFICIAL FINTRIX PVT. LTD., our commitment is to provide professional service, transparent communication, and a dependable client experience. We aim to build lasting relationships by putting service quality and client trust at the heart of everything we do.
-              </p>
             </div>
 
           </div>
