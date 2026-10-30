@@ -12,12 +12,12 @@ const Footer = () => {
 
                     {/* Brand Column */}
                     <div className="flex flex-col items-start">
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1">
+                        <Link to="/" className="flex items-center gap-3.5 sm:gap-4 mb-6 group">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden bg-white p-1.5 shadow-md flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
                                 <img src={logo} alt="DB Fintrix Logo" className="w-full h-full object-contain rounded-full" />
                             </div>
-                            <span className="text-2xl font-bold tracking-wider">DBFintrix</span>
-                        </div>
+                            <span className="text-2xl sm:text-3xl font-bold tracking-wider group-hover:text-[#0f9d27] transition-colors">DBFintrix</span>
+                        </Link>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             Dealing Beneficial Fintrix Pvt. Ltd. Empowering your financial journey with expert planning, investment solutions, and transparent pricing.
                         </p>

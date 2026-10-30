@@ -3,19 +3,19 @@ import AnimatedWords from '../../Comman components/AnimatedWords';
 import img1 from '../../assets/mobile phone.png';
 import img2 from '../../assets/portfolio_advisory_clean.png';
 import img3 from '../../assets/Seamless-3rd-2x.png';
-import { Sparkles, ShieldCheck, Clock, Zap } from 'lucide-react';
+import { TrendingUp, Sparkles, ShieldCheck, Clock, Zap } from 'lucide-react';
 
 const investingData = [
   {
     id: 0,
-    title: "Zero Commission on Mutual Fund Investments/SIPs",
-    description: "Enjoy the compounding returns of mutual funds and SIPs, at no additional costs.",
+    title: "Low-Cost Stock Market Trading",
+    description: "Trade equity delivery, intraday, and F&O at low brokerage with lightning-fast order execution and transparent pricing.",
     image: img1,
-    badge: "100% Direct & Zero Fee",
+    badge: "Low Brokerage & Fast Execution",
     themeColor: "from-blue-500 to-indigo-600",
     borderActive: "border-brand-blue bg-blue-50/40",
     pillBg: "bg-blue-100 text-blue-700",
-    icon: <Sparkles className="w-5 h-5 text-brand-blue" />
+    icon: <TrendingUp className="w-5 h-5 text-brand-blue" />
   },
   {
     id: 1,

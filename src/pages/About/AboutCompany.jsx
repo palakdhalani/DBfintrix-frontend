@@ -85,16 +85,6 @@ const AboutCompany = () => {
               <p>
                 At DEALING BENEFICIAL FINTRIX PVT. LTD., our commitment is to provide professional service, transparent communication, and a dependable client experience. We aim to build lasting relationships by putting service quality and client trust at the heart of everything we do.
               </p>
-
-              <div className="pt-2 border-t border-gray-100 font-bold text-xs sm:text-sm text-brand-green flex flex-wrap gap-2 items-center">
-                <span>20+ Years of Experience</span>
-                <span>•</span>
-                <span>Professional Service</span>
-                <span>•</span>
-                <span>Client-Centric Approach</span>
-                <span>•</span>
-                <span>Long-Term Relationships</span>
-              </div>
             </div>
 
           </div>

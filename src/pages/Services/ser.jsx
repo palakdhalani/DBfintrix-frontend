@@ -202,9 +202,28 @@ const ServicesMainPage = () => {
                   <h3 className="text-base font-bold text-brand-blue uppercase tracking-wide mb-2">
                     Evaluation & Return Formula
                   </h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
                     {currentService.calculation}
                   </p>
+
+                  {currentService.sipExamples && (
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                      {currentService.sipExamples.map((item, index) => (
+                        <div 
+                          key={index} 
+                          className="bg-white p-3.5 rounded-xl border border-blue-100 shadow-sm flex flex-col text-center hover:border-blue-300 transition-colors"
+                        >
+                          <span className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Monthly SIP</span>
+                          <span className="text-lg font-bold text-brand-dark mb-1">{item.sip}</span>
+                          <span className="text-[11px] text-gray-400 mb-3">Invested: {item.totalInvested}</span>
+                          <div className="mt-auto pt-2 border-t border-gray-100">
+                            <span className="text-[10px] uppercase font-bold text-emerald-600 block">Value in 20 Yrs</span>
+                            <span className="text-sm font-extrabold text-[#0f9d27]">{item.expectedWealth}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Why Choose Us */}

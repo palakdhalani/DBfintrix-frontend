@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const ServiceHero = ({ image }) => {
   const [content, setContent] = useState({
     heading: 'Enjoy 1 month of <br className="hidden md:block" /> FREE trading',
-    subheading: 'Stocks, F&O, Intraday, all at ₹0 brokerage',
+    subheading: 'Stocks, F&O, Intraday, all at Low Brokerage',
     imageUrl: image
   });
 
@@ -15,7 +15,7 @@ const ServiceHero = ({ image }) => {
           const data = await res.json();
           setContent({
             heading: data.heading || 'Enjoy 1 month of <br className="hidden md:block" /> FREE trading',
-            subheading: data.subheading || 'Stocks, F&O, Intraday, all at ₹0 brokerage',
+            subheading: data.subheading || 'Stocks, F&O, Intraday, all at Low Brokerage',
             imageUrl: data.imageUrl || image
           });
         }

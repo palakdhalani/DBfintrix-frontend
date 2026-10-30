@@ -22,17 +22,17 @@ const plans = [
   },
   {
     id: 'delivery',
-    badge: 'Zero Brokerage',
+    badge: 'Low Brokerage',
     badgeColor: 'bg-emerald-100 text-emerald-700 border-emerald-200',
     title: 'Equity Delivery',
-    price: '₹0',
-    unit: 'Lifetime Free',
-    description: 'Zero brokerage on all your long-term equity delivery investments.',
+    price: '₹20',
+    unit: '',
+    description: 'Low brokerage on all your long-term equity delivery investments.',
     icon: '📈',
     popular: true,
     accentBorder: 'border-emerald-500 shadow-xl shadow-emerald-900/10 hover:shadow-2xl hover:border-emerald-600',
     features: [
-      '₹0 brokerage on all NSE & BSE deliveries',
+      'Flat ₹20 brokerage on all NSE & BSE deliveries',
       'Direct dividend credits to your bank',
       'Zero hidden transaction fees or surcharges'
     ]
@@ -48,7 +48,7 @@ const plans = [
     icon: '⚡',
     accentBorder: 'hover:border-amber-500 hover:shadow-amber-500/15',
     features: [
-      'Flat ₹20 or 0.05% (whichever is lower)',
+      'Flat ₹20 or 0.03% (whichever is lower)',
       'Advanced Option Chain with live Greeks',
       'Fast order execution with zero latency'
     ]
@@ -135,9 +135,11 @@ const Pricing = () => {
                     <span className="text-5xl font-black text-[#1a2c4c] tracking-tight">
                       {plan.price}
                     </span>
-                    <span className="text-gray-400 font-medium text-sm">
-                      {plan.unit}
-                    </span>
+                    {plan.unit ? (
+                      <span className="text-gray-400 font-medium text-sm">
+                        {plan.unit}
+                      </span>
+                    ) : null}
                   </div>
 
                   {/* Features List */}

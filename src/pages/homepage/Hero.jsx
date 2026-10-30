@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BarChart3, Coins, Shield, ChevronLeft, ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
+import { TrendingUp, BarChart3, Coins, Shield, ChevronLeft, ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
 import AnimatedWords from '../../Comman components/AnimatedWords';
 import slide1 from '../../assets/The Role of Corporate Finance in Growth.jpg';
 import slide2 from '../../assets/1 slide.png';
@@ -43,11 +43,11 @@ const defaultSlides = [
 
 const defaultCards = [
     {
-        icon: <BarChart3 className="w-9 h-9" />,
-        title: "Wealth Building",
-        description: "Strategic investment planning designed to grow your wealth steadily over time.",
+        icon: <TrendingUp className="w-9 h-9" />,
+        title: "Stock Market",
+        description: "Seamlessly trade and invest in NSE & BSE equities, derivatives, and long-term stocks.",
         linkText: "Discover More",
-        link: "#",
+        link: "/services",
         hoverBg: "hover:bg-gradient-to-br hover:from-[#0a1d42] hover:via-[#0c285d] hover:to-[#004aad] hover:shadow-blue-900/30",
         iconDefault: "text-brand-dark bg-blue-50",
         iconHover: "group-hover:bg-white/15 group-hover:text-cyan-300",

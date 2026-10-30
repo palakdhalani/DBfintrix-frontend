@@ -6,23 +6,32 @@ const SidebarNav = ({ sections, activeSection, onSectionClick }) => {
         <div className="bg-white rounded-2xl shadow-xl shadow-gray-200/50 border border-gray-100 p-6 sticky top-32 z-40 hidden lg:block">
             <h3 className="text-xl font-extrabold text-brand-dark mb-6 tracking-tight">Features</h3>
             
-            <nav className="flex flex-col space-y-2 relative">
-                {/* Active indicator line */}
-                <div className="absolute left-[11px] top-0 bottom-0 w-0.5 bg-gray-100 -z-10 rounded-full"></div>
-
-                {sections.map((section, idx) => {
+            <nav className="flex flex-col space-y-1 relative">
+                {sections.map((section) => {
                     const isActive = activeSection === section.id;
                     
                     return (
                         <button
                             key={section.id}
                             onClick={() => onSectionClick(section.id)}
-                            className={`flex items-center text-left py-3 px-3 transition-all duration-300 relative group`}
+                            className={`flex items-center text-left py-2.5 px-3 rounded-xl transition-all duration-300 relative group cursor-pointer ${
+                                isActive 
+                                    ? 'bg-emerald-50/80 text-brand-green font-bold shadow-xs' 
+                                    : 'text-gray-600 hover:text-brand-dark hover:bg-gray-50 font-medium'
+                            }`}
                         >
-                            {/* Dot indicator */}
-                            <div className={`absolute left-0 w-[6px] h-[6px] rounded-full transition-all duration-300 transform -translate-x-1/2 ${isActive ? 'bg-brand-green scale-150 shadow-[0_0_8px_rgba(15,157,39,0.6)]' : 'bg-gray-300 group-hover:bg-gray-400 group-hover:scale-125'}`}></div>
+                            {/* Finger arrow indicator */}
+                            <span 
+                                className={`inline-block mr-2.5 text-base transition-all duration-300 transform ${
+                                    isActive 
+                                        ? 'scale-115 translate-x-1 opacity-100' 
+                                        : 'opacity-35 group-hover:opacity-90 group-hover:translate-x-1'
+                                }`}
+                            >
+                                👉
+                            </span>
                             
-                            <span className={`ml-6 font-semibold text-sm transition-colors duration-300 ${isActive ? 'text-brand-green' : 'text-gray-500 group-hover:text-gray-900'}`}>
+                            <span className="text-sm tracking-tight">
                                 {section.title}
                             </span>
                         </button>

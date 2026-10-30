@@ -16,24 +16,6 @@ import {
 const options = [
   {
     id: 1,
-    name: "Mutual Funds",
-    badge: "SIP & Wealth",
-    icon: PiggyBank,
-    hoverBg: "hover:bg-gradient-to-br hover:from-[#062e16] hover:via-[#0a4821] hover:to-[#0f9d27] hover:shadow-emerald-900/40",
-    iconDefault: "text-brand-green bg-emerald-50 border-emerald-100",
-    iconHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
-    badgeDefault: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    badgeHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
-    accentBullet: "text-emerald-400 group-hover:text-emerald-300",
-    bottomArrowBg: "bg-emerald-600 group-hover:bg-white group-hover:text-emerald-700",
-    lines: [
-      "Zero commission on Direct Mutual Funds",
-      "Disciplined compounding monthly SIPs from ₹500",
-      "Expert-curated equity, debt & ELSS tax-saving baskets"
-    ]
-  },
-  {
-    id: 2,
     name: "Stocks",
     badge: "Equity & Delivery",
     icon: TrendingUp,
@@ -45,13 +27,13 @@ const options = [
     accentBullet: "text-cyan-400 group-hover:text-cyan-300",
     bottomArrowBg: "bg-blue-600 group-hover:bg-white group-hover:text-blue-700",
     lines: [
-      "₹0 brokerage on long-term equity delivery investments",
+      "₹20 brokerage on long-term equity delivery investments",
       "Ultra-low latency live NSE & BSE tick-by-tick feeds",
       "Advanced TradingView charting with 1-click instant orders"
     ]
   },
   {
-    id: 3,
+    id: 2,
     name: "Futures & Options",
     badge: "F&O Trading",
     icon: BarChart3,
@@ -69,25 +51,7 @@ const options = [
     ]
   },
   {
-    id: 4,
-    name: "IPO",
-    badge: "New Listings",
-    icon: Rocket,
-    hoverBg: "hover:bg-gradient-to-br hover:from-[#2e1003] hover:via-[#572205] hover:to-[#ea580c] hover:shadow-orange-900/40",
-    iconDefault: "text-orange-600 bg-orange-50 border-orange-100",
-    iconHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
-    badgeDefault: "bg-orange-50 text-orange-700 border-orange-200",
-    badgeHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
-    accentBullet: "text-amber-400 group-hover:text-amber-300",
-    bottomArrowBg: "bg-orange-600 group-hover:bg-white group-hover:text-orange-700",
-    lines: [
-      "1-Click instant UPI mandate application in under 60 seconds",
-      "Real-time live subscription numbers & GMP alert updates",
-      "Hassle-free pre-apply window before public issues open"
-    ]
-  },
-  {
-    id: 5,
+    id: 3,
     name: "Commodities",
     badge: "MCX Exchange",
     icon: Boxes,
@@ -105,25 +69,7 @@ const options = [
     ]
   },
   {
-    id: 6,
-    name: "Currencies",
-    badge: "Global Forex",
-    icon: ArrowRightLeft,
-    hoverBg: "hover:bg-gradient-to-br hover:from-[#042827] hover:via-[#094643] hover:to-[#0d9488] hover:shadow-teal-900/40",
-    iconDefault: "text-teal-700 bg-teal-50 border-teal-100",
-    iconHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
-    badgeDefault: "bg-teal-50 text-teal-700 border-teal-200",
-    badgeHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
-    accentBullet: "text-teal-400 group-hover:text-teal-300",
-    bottomArrowBg: "bg-teal-600 group-hover:bg-white group-hover:text-teal-700",
-    lines: [
-      "Trade major currency pairs: USD-INR, EUR-INR, GBP-INR & JPY-INR",
-      "Deep global liquidity with ultra-low competitive spreads",
-      "Safeguard your business & portfolio against forex volatility"
-    ]
-  },
-  {
-    id: 7,
+    id: 4,
     name: "Derivatives",
     badge: "Smart Hedging",
     icon: Activity,
@@ -141,7 +87,43 @@ const options = [
     ]
   },
   {
-    id: 8,
+    id: 5,
+    name: "IPO",
+    badge: "New Listings",
+    icon: Rocket,
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#2e1003] hover:via-[#572205] hover:to-[#ea580c] hover:shadow-orange-900/40",
+    iconDefault: "text-orange-600 bg-orange-50 border-orange-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
+    badgeDefault: "bg-orange-50 text-orange-700 border-orange-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-amber-200 group-hover:border-white/20",
+    accentBullet: "text-amber-400 group-hover:text-amber-300",
+    bottomArrowBg: "bg-orange-600 group-hover:bg-white group-hover:text-orange-700",
+    lines: [
+      "1-Click instant UPI mandate application in under 60 seconds",
+      "Real-time live subscription numbers & GMP alert updates",
+      "Hassle-free pre-apply window before public issues open"
+    ]
+  },
+  {
+    id: 6,
+    name: "Mutual Funds",
+    badge: "SIP & Wealth",
+    icon: PiggyBank,
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#062e16] hover:via-[#0a4821] hover:to-[#0f9d27] hover:shadow-emerald-900/40",
+    iconDefault: "text-brand-green bg-emerald-50 border-emerald-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
+    badgeDefault: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-emerald-200 group-hover:border-white/20",
+    accentBullet: "text-emerald-400 group-hover:text-emerald-300",
+    bottomArrowBg: "bg-emerald-600 group-hover:bg-white group-hover:text-emerald-700",
+    lines: [
+      "Low-cost Direct Mutual Funds",
+      "Disciplined compounding monthly SIPs from ₹500",
+      "Expert-curated equity, debt & ELSS tax-saving baskets"
+    ]
+  },
+  {
+    id: 7,
     name: "Bonds & Debentures",
     badge: "Fixed Income",
     icon: ShieldCheck,
@@ -156,6 +138,24 @@ const options = [
       "High-yield Sovereign Gold Bonds (SGB) & Corporate Debentures",
       "Guaranteed predictable periodic interest credited to your bank",
       "Safe capital preservation yielding 8% to 12% returns"
+    ]
+  },
+  {
+    id: 8,
+    name: "Currencies",
+    badge: "Global Forex",
+    icon: ArrowRightLeft,
+    hoverBg: "hover:bg-gradient-to-br hover:from-[#042827] hover:via-[#094643] hover:to-[#0d9488] hover:shadow-teal-900/40",
+    iconDefault: "text-teal-700 bg-teal-50 border-teal-100",
+    iconHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
+    badgeDefault: "bg-teal-50 text-teal-700 border-teal-200",
+    badgeHover: "group-hover:bg-white/15 group-hover:text-teal-200 group-hover:border-white/20",
+    accentBullet: "text-teal-400 group-hover:text-teal-300",
+    bottomArrowBg: "bg-teal-600 group-hover:bg-white group-hover:text-teal-700",
+    lines: [
+      "Trade major currency pairs: USD-INR, EUR-INR, GBP-INR & JPY-INR",
+      "Deep global liquidity with ultra-low competitive spreads",
+      "Safeguard your business & portfolio against forex volatility"
     ]
   }
 ];

@@ -44,7 +44,7 @@ export const servicesData = [
     ],
     calculation: "Demat accounts in India hold ISIN-coded securities, each verified and reconciled nightly with Central Depository Services India Limited (CDSL).",
     whyChoose: [
-      "Zero Account Opening Charges (100% Free Lifetime Onboarding)",
+      "Zero Account Opening Charges",
       "Zero AMC (Annual Maintenance Charge) for the entire first year",
       "Instant 5-minute Aadhaar e-KYC paperless activation",
       "Bank-grade 256-bit encryption with biometric login authentication"
@@ -100,7 +100,7 @@ export const servicesData = [
     id: 'mutual-funds',
     title: 'Mutual Funds',
     badge: 'Wealth Compounding',
-    description: "Zero-commission Direct Mutual Funds and disciplined SIP investing across equity, debt, hybrid, and index funds curated by expert advisors.",
+    description: "Low-cost Direct Mutual Funds and disciplined SIP investing across equity, debt, hybrid, and index funds curated by expert advisors.",
     tag: 'SERVICES / INVESTORS',
     image: mutualFundsImg,
     subtitle: "Disciplined SIPs & Direct Mutual Fund Growth",
@@ -134,9 +134,15 @@ export const servicesData = [
       { title: "Instant Cross-Asset Diversification", text: "A single mutual fund unit gives you exposure to 50+ blue-chip companies, reducing single-stock risk." },
       { title: "High Liquidity & Digital Redeeming", text: "Redeem your mutual fund units with zero exit penalties after statutory tenures; funds reach your bank in T+1/T+2 days." }
     ],
-    calculation: "The compounding formula A = P * (1 + r/n)^(nt) demonstrates how a ₹10,000 monthly SIP compounding at 14% CAGR grows to ₹1.39 Crores in 20 years.",
+    calculation: "The compounding formula A = P * [(1 + r/n)^(nt) - 1] demonstrates how monthly SIP compounding at 14% CAGR grows exponentially over a 20-year horizon (240 months):",
+    sipExamples: [
+      { sip: "₹1,000", totalInvested: "₹2.4 Lakhs", expectedWealth: "₹13.9 Lakhs" },
+      { sip: "₹2,000", totalInvested: "₹4.8 Lakhs", expectedWealth: "₹27.8 Lakhs" },
+      { sip: "₹5,000", totalInvested: "₹12.0 Lakhs", expectedWealth: "₹69.5 Lakhs" },
+      { sip: "₹10,000", totalInvested: "₹24.0 Lakhs", expectedWealth: "₹1.39 Crores" }
+    ],
     whyChoose: [
-      "100% Direct Mutual Fund schemes with zero distributor commission fees",
+      "100% Direct Mutual Fund schemes with attractive distributor commission fees",
       "Algorithmic portfolio health checkup and automated annual rebalancing alerts",
       "Single-click SIP creation, pause, step-up, and instant digital redemption",
       "Goal-based investing trackers for retirement, child education, and wealth creation"

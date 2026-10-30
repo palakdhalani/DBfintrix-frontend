@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Award, Users, TrendingUp, ChevronRight } from 'lucide-react';
+import { Shield, TrendingUp, BarChart3, ChevronRight } from 'lucide-react';
 import bgImage from '../../assets/why choose us photo.jpg';
 
 const AboutHero = () => {
@@ -38,33 +38,23 @@ const AboutHero = () => {
           </h1>
 
           <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-8 animate-fade-in-up delay-100">
-            At DB Fintrix, we combine over two decades of senior leadership experience in insurance broking and financial advisory to protect your assets and accelerate your wealth creation journey.
+            At DB Fintrix, we combine deep capital markets expertise and disciplined financial advisory to empower investors and accelerate your wealth creation journey.
           </p>
 
-          {/* Quick Highlight Pills */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-white/10">
+          {/* Quick Highlight Pills (3 Core Pillars) */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-white/10">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-brand-green/20 flex items-center justify-center text-brand-green">
-                <Award className="w-5 h-5" />
+                <TrendingUp className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-white font-bold text-lg leading-none">20+ Yrs</p>
-                <p className="text-gray-400 text-xs mt-1">Experience</p>
+                <p className="text-white font-bold text-lg leading-none">₹20</p>
+                <p className="text-gray-400 text-xs mt-1">Delivery Brokerage</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400">
-                <Users className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-white font-bold text-lg leading-none">50K+</p>
-                <p className="text-gray-400 text-xs mt-1">Happy Clients</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-brand-green/20 flex items-center justify-center text-brand-green">
                 <Shield className="w-5 h-5" />
               </div>
               <div>
@@ -75,11 +65,11 @@ const AboutHero = () => {
 
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400">
-                <TrendingUp className="w-5 h-5" />
+                <BarChart3 className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-white font-bold text-lg leading-none">360°</p>
-                <p className="text-gray-400 text-xs mt-1">Solutions</p>
+                <p className="text-gray-400 text-xs mt-1">Market Solutions</p>
               </div>
             </div>
           </div>

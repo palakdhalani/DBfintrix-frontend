@@ -7,7 +7,7 @@ const inquiries = [
         title: "Business Associates",
         icon: <Headset className="w-8 h-8 text-brand-dark" />,
         description: "For all inquiries related to business associations, please feel free to contact us.",
-        phone: "+91 90336 00411",
+        phone: "+91 90336 00412",
         email: "operation.dbfintrix@gmail.com"
     },
     {
@@ -23,7 +23,7 @@ const inquiries = [
         title: "Sales Team Support",
         icon: <Network className="w-8 h-8 text-brand-dark" />,
         description: "Reach out to our Sales Team for any support or inquiries.",
-        phone: "+91 90336 00411",
+        phone: "+91 90336 00412",
         email: "info.dbfintrix@gmail.com"
     }
 ];

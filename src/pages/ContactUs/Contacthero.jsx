@@ -10,7 +10,7 @@ const contactDetails = [
         icon: <PhoneCall className="w-5 h-5 text-brand-green" />,
         content: (
             <a 
-                href="tel:+919033600411" 
+                href="tel:+919033600412" 
                 className="text-gray-700 hover:text-brand-green transition-colors font-semibold block text-base"
             >
                 +91 90336 00412

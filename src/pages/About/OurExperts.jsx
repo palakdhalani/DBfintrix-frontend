@@ -21,33 +21,8 @@ const experts = [
 
 const OurExperts = () => {
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 relative reveal">
-          {/* Tag: ››› OUR EXPERTS ‹‹‹ */}
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="text-brand-blue font-bold tracking-widest text-sm">›››</span>
-            <span className="text-brand-dark font-extrabold tracking-wider text-sm uppercase">
-              OUR EXPERTS
-            </span>
-            <span className="text-brand-blue font-bold tracking-widest text-sm">‹‹‹</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-dark leading-tight tracking-tight mb-4">
-            Meet our experienced team people
-          </h2>
-
-          <p className="text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">
-            Our accomplished leadership combines decades of proven experience in financial services, insurance broking, and corporate governance.
-          </p>
-
-          {/* Decorative concentric ring marker */}
-          <div className="hidden lg:flex absolute -right-12 top-10 w-7 h-7 rounded-full border-2 border-brand-blue/40 items-center justify-center bg-white shadow-sm">
-            <span className="w-2.5 h-2.5 rounded-full bg-brand-blue"></span>
-          </div>
-        </div>
 
         {/* Experts Card Container (2-Column Balanced Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto justify-center">

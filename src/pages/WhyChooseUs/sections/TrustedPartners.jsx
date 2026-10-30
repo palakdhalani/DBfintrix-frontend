@@ -20,7 +20,7 @@ const TrustedPartners = ({ id }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-blue-200 transition-colors">
                         <Handshake className="w-6 h-6 text-blue-500 mb-4" />
-                        <h4 className="font-bold text-gray-900 mb-2">Industry Leaders</h4>
+                        <h4 className="font-bold text-gray-900 mb-2">Market Experts</h4>
                         <p className="text-gray-500 text-sm">Partnered with SEBI registered entities holding decades of trust and reliability.</p>
                     </div>
                     <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-blue-200 transition-colors">

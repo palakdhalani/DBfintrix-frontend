@@ -45,7 +45,7 @@ const ServicesPage = () => {
               FREE trading
             </>
           }
-          subtitle="Stocks, F&O, Intraday, all at ₹0 brokerage"
+          subtitle="Stocks, F&O, Intraday, all at Low Brokerage"
           noBgImage={true}
           sideImage={slide1}
           cardsData={serviceCardsData}
