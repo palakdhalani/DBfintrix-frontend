@@ -86,13 +86,18 @@ const Footer = () => {
                                     206, 2nd Floor, Business Bay, 6 Royal Park,<br />Kalawad Road, Rajkot, Gujarat – 360005
                                 </a>
                             </li>
-                            <li className="flex items-center gap-3">
-                                <span className="text-[#0f9d27] text-lg">📞</span>
-                                <p>+91 90336 00411</p>
+                            <li className="flex items-start gap-3">
+                                <span className="text-[#0f9d27] text-lg mt-0.5">📞</span>
+                                <div className="flex flex-col gap-1">
+                                    <a href="tel:+919033600411" className="hover:text-[#0f9d27] transition-colors">+91 90336 00411</a>
+                                    <a href="tel:+919033600412" className="hover:text-[#0f9d27] transition-colors">+91 90336 00412</a>
+                                </div>
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-[#0f9d27] text-lg">✉️</span>
-                                <p>info.dbfintrix@gmail.com</p>
+                                <a href="mailto:info.dbfintrix@gmail.com" className="hover:text-[#0f9d27] transition-colors">
+                                    info.dbfintrix@gmail.com
+                                </a>
                             </li>
                         </ul>
                     </div>
