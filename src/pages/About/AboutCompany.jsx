@@ -96,15 +96,6 @@ const AboutCompany = () => {
 
         </div>
 
-        {/* Subtle Section Divider */}
-        <div className="relative flex items-center justify-center">
-          <div className="w-full border-t border-gray-100"></div>
-          <div className="absolute px-4 bg-white text-gray-400 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>Board of Directors</span>
-            <span className="w-2 h-2 rounded-full bg-sky-400"></span>
-          </div>
-        </div>
 
         {/* Profile 2: Mrs. Bhargaviba Gohil */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
