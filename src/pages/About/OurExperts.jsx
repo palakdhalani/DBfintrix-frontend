@@ -8,14 +8,14 @@ const experts = [
     role: 'Director',
     image: bhargavibaImg,
     badge: 'Executive Leadership',
-    bio: 'Guiding corporate strategy and client engagement with focused expertise in financial and insurance broking governance.'
+    bio: 'Guiding corporate strategy, HR excellence, and digital investor outreach with focused expertise in stock market services and governance.'
   },
   {
     name: 'MR. DEVENDRASINH B. GOHIL',
     role: 'Director & Principal Officer',
     image: devendrasinhImg,
     badge: 'Executive Leadership',
-    bio: 'Leading DB Fintrix with over 20 years of proven capital markets experience, driving strategic growth and client-centric investment excellence.'
+    bio: 'Leading DB Fintrix with proven corporate leadership, driving strategic growth, transparency, and client-centric investment excellence.'
   }
 ];
 
