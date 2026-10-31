@@ -41,8 +41,8 @@ const ServicesPage = () => {
           type="lead"
           title={
             <>
-              Enjoy 1 month of <br />
-              FREE trading
+              Enjoy 1 Year of <br />
+              FREE Demat Account
             </>
           }
           subtitle="Stocks, F&O, Intraday, all at Low Brokerage"

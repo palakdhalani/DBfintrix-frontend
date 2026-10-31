@@ -103,7 +103,7 @@ const AdminServicesContent = () => {
                                     name="heading"
                                     value={formData.heading}
                                     onChange={handleChange}
-                                    placeholder="e.g. Enjoy 1 month of <br> FREE trading"
+                                    placeholder="e.g. Enjoy 1 Year of <br> FREE Demat Account"
                                     className="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-green/50 focus:border-brand-green transition-all"
                                 />
                             </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const ServiceHero = ({ image }) => {
   const [content, setContent] = useState({
-    heading: 'Enjoy 1 month of <br className="hidden md:block" /> FREE trading',
+    heading: 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
     subheading: 'Stocks, F&O, Intraday, all at Low Brokerage',
     imageUrl: image
   });
@@ -14,7 +14,7 @@ const ServiceHero = ({ image }) => {
         if (res.ok) {
           const data = await res.json();
           setContent({
-            heading: data.heading || 'Enjoy 1 month of <br className="hidden md:block" /> FREE trading',
+            heading: data.heading || 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
             subheading: data.subheading || 'Stocks, F&O, Intraday, all at Low Brokerage',
             imageUrl: data.imageUrl || image
           });
