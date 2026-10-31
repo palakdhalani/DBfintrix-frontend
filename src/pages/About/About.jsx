@@ -5,7 +5,6 @@ import AboutHero from './AboutHero';
 import AboutCompany from './AboutCompany';
 import VisionMission from './VisionMission';
 import AboutStats from './AboutStats';
-import OurExperts from './OurExperts';
 import AboutCTA from './AboutCTA';
 
 const About = () => {
@@ -25,9 +24,6 @@ const About = () => {
 
         {/* Mission, Vision & Core Values */}
         <VisionMission />
-
-        {/* Our Experts Section (Bhargaviba Gohil, Renu Singh Rampratapsingh, Kinjal Parikh) */}
-        <OurExperts />
 
         {/* Call To Action Banner */}
         <AboutCTA />

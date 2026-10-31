@@ -10,7 +10,6 @@ import Investing from './investing';
 import Services from '../Services/services';
 import Pricing from './Pricing';
 import AboutCompany from '../About/AboutCompany';
-import OurExperts from '../About/OurExperts';
 import Faq from './Faq';
 import Footer from '../../Comman components/Footer';
 
@@ -28,7 +27,6 @@ const Home = () => {
             {/* <Consultant /> */}
             {/* <Services /> */}
             <AboutCompany />
-            <OurExperts />
             <Faq />
             <Footer />
         </div>
