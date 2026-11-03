@@ -4,7 +4,7 @@ import { HeartHandshake, Zap, Award, ShieldCheck } from 'lucide-react';
 const features = [
     {
         id: 1,
-        title: "Trusted by 1 Million+ Happy Investors",
+        title: "Trusted by Happy Investors",
         icon: <HeartHandshake className="w-10 h-10 text-brand-green mb-4" />
     },
     {

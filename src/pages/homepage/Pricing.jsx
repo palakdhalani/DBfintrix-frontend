@@ -10,7 +10,7 @@ const plans = [
     badgeColor: 'bg-blue-100 text-blue-700 border-blue-200',
     title: 'Account Opening',
     price: '₹0',
-    unit: 'Free Forever',
+    unit: '',
     description: 'Free Demat and Trading account opening with zero paperwork hassle.',
     icon: '🆓',
     accentBorder: 'hover:border-blue-500 hover:shadow-blue-500/15',
