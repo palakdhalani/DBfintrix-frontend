@@ -42,13 +42,13 @@ const plans = [
     badge: 'Flat Rate',
     badgeColor: 'bg-amber-100 text-amber-700 border-amber-200',
     title: 'Intraday & F&O',
-    price: '₹20',
+    price: '₹25',
     unit: '/ executed order',
     description: 'Flat fee for Intraday, Futures & Options, Currencies and Commodities.',
     icon: '⚡',
     accentBorder: 'hover:border-amber-500 hover:shadow-amber-500/15',
     features: [
-      'Flat ₹20 or 0.03% (whichever is lower)',
+      'Flat ₹25 or 0.03% (whichever is lower)',
       'Advanced Option Chain with live Greeks',
       'Fast order execution with zero latency'
     ]
