@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import { ArrowLeft, Calendar, User, Clock, Share2 } from 'lucide-react';
 import Navbar from '../../Comman components/Navbar';
 import Footer from '../../Comman components/Footer';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
+export const getImageUrl = (url) => {
+  if (!url) return '';
+  if (url.startsWith('/uploads') || (url.startsWith('/') && !url.startsWith('//'))) {
+    return `${API_BASE}${url}`;
+  }
+  return url;
+};
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -13,11 +20,12 @@ const BlogDetail = () => {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
-        const response = await fetch(`${API_URL}/blogs/${id}`);
+        const response = await fetch(`${API_BASE}/api/blogs/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch blog');
         }
@@ -33,6 +41,24 @@ const BlogDetail = () => {
 
     fetchBlogDetails();
   }, [id]);
+
+  const handleShare = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  const formatDate = (dateStr) => {
+    if (!dateStr) return 'Recently';
+    try {
+      const d = new Date(dateStr);
+      return isNaN(d.getTime()) ? 'Recently' : d.toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
+    } catch {
+      return 'Recently';
+    }
+  };
 
   if (loading) {
     return (
@@ -52,10 +78,10 @@ const BlogDetail = () => {
         <Navbar />
         <div className="flex-grow flex flex-col items-center justify-center pt-32 pb-20 px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Oops! Something went wrong.</h2>
-          <p className="text-gray-500 mb-8">{error}</p>
+          <p className="text-gray-500 mb-8">{error || 'Article not found.'}</p>
           <button 
             onClick={() => navigate('/blog')}
-            className="px-6 py-3 bg-brand-green text-white rounded-lg hover:bg-green-700 font-medium transition-colors inline-flex items-center gap-2"
+            className="px-6 py-3 bg-brand-green text-white rounded-lg hover:bg-green-700 font-medium transition-colors inline-flex items-center gap-2 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </button>
@@ -64,6 +90,8 @@ const BlogDetail = () => {
       </div>
     );
   }
+
+  const authorName = blog.author || 'Admin';
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -85,7 +113,7 @@ const BlogDetail = () => {
           <header className="mb-12">
             <div className="mb-6 flex flex-wrap items-center gap-4">
               <span className="px-4 py-1.5 bg-brand-green/10 text-brand-green rounded-full text-sm font-bold uppercase tracking-wide">
-                {blog.category}
+                {blog.category || 'General'}
               </span>
               <span className="text-gray-400 text-sm flex items-center gap-1.5">
                 <Clock className="w-4 h-4" /> 5 min read
@@ -99,20 +127,26 @@ const BlogDetail = () => {
             <div className="flex items-center justify-between py-6 border-y border-gray-200">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-dark rounded-full flex items-center justify-center text-white font-bold text-lg">
-                  {blog.author.charAt(0)}
+                  {authorName.charAt(0).toUpperCase()}
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">{blog.author}</div>
+                  <div className="font-bold text-gray-900">{authorName}</div>
                   <div className="text-sm text-gray-500 flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
-                    {new Date(blog.createdAt).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}
+                    {formatDate(blog.createdAt)}
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <span className="text-sm font-medium text-gray-400 hidden sm:block">Share:</span>
-                <button className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand-green hover:text-white transition-colors">
+                <span className="text-sm font-medium text-gray-400 hidden sm:block">
+                  {copied ? 'Link copied!' : 'Share:'}
+                </span>
+                <button 
+                  onClick={handleShare}
+                  className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-brand-green hover:text-white transition-colors cursor-pointer"
+                  title="Copy link"
+                >
                   <Share2 className="w-4 h-4" />
                 </button>
               </div>
@@ -121,22 +155,26 @@ const BlogDetail = () => {
 
           {/* Hero Image */}
           {blog.imageUrl && (
-            <div className="rounded-2xl overflow-hidden mb-12 shadow-lg">
+            <div className="rounded-2xl overflow-hidden mb-12 shadow-lg bg-gray-100">
               <img 
-                src={blog.imageUrl} 
+                src={getImageUrl(blog.imageUrl)} 
                 alt={blog.title} 
                 className="w-full h-auto max-h-[500px] object-cover"
+                onError={(e) => { e.target.parentElement.style.display = 'none'; }}
               />
             </div>
           )}
 
           {/* Article Content */}
           <article className="prose prose-lg prose-green max-w-none prose-headings:font-bold prose-headings:text-brand-dark prose-a:text-brand-green prose-img:rounded-xl bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
-            {/* Simple split by newline for basic rendering since we just have textarea */}
-            {blog.content.split('\n').map((paragraph, index) => {
-              if (!paragraph.trim()) return <br key={index} />;
-              return <p key={index} className="text-gray-700 leading-relaxed mb-6">{paragraph}</p>;
-            })}
+            {blog.content ? (
+              blog.content.split('\n').map((paragraph, index) => {
+                if (!paragraph.trim()) return <br key={index} />;
+                return <p key={index} className="text-gray-700 leading-relaxed mb-6">{paragraph}</p>;
+              })
+            ) : (
+              <p className="text-gray-400 italic">No content available for this article.</p>
+            )}
           </article>
 
         </div>

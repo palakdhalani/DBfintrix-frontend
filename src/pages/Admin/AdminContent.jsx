@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Save, Image as ImageIcon, LayoutTemplate } from 'lucide-react';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const AdminContent = () => {
     const [selectedSection, setSelectedSection] = useState('services-hero');
     const [formData, setFormData] = useState({
@@ -23,7 +25,7 @@ const AdminContent = () => {
             setIsLoading(true);
             setStatus({ type: '', message: '' });
             try {
-                const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hero/${selectedSection}`);
+                const res = await fetch(`${API_BASE}/api/hero/${selectedSection}`);
                 if (res.ok) {
                     const data = await res.json();
                     setFormData({
@@ -56,7 +58,7 @@ const AdminContent = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hero/${selectedSection}`, {
+            const res = await fetch(`${API_BASE}/api/hero/${selectedSection}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

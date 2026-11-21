@@ -1,0 +1,23 @@
+{
+  "services-hero": {
+    "section": "services-hero",
+    "heading": "Comprehensive Financial Solutions for Every Investor",
+    "subheading": "Partner with DB Fintrix for cutting-edge broking, research-backed advisory, and high-growth franchise opportunities.",
+    "imageUrl": "",
+    "updatedAt": "2026-11-21T08:36:34.156Z"
+  },
+  "news-top-story": {
+    "section": "news-top-story",
+    "heading": "Domestic Institutional Inflows Propel Markets to Historic Highs",
+    "subheading": "Resilient GDP growth and strong quarterly earnings reinforce bullish sentiment across broad market indices.",
+    "imageUrl": "",
+    "updatedAt": "2026-11-21T10:00:00.000Z"
+  },
+  "finance-top-story": {
+    "section": "finance-top-story",
+    "heading": "Strategic Asset Allocation Strategies in High-Interest Cycles",
+    "subheading": "How disciplined rebalancing across equities, debt instruments, and precious metals safeguards wealth.",
+    "imageUrl": "",
+    "updatedAt": "2026-11-21T10:00:00.000Z"
+  }
+}

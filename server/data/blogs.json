@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "665e8a1f2b14c3e809a10001",
+    "title": "Mastering the Indian Stock Market: A Beginner's Roadmap for 2026",
+    "category": "Stock Market Basics",
+    "author": "DB Fintrix Research Desk",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+    "content": "Entering the Indian equity markets requires a solid foundation built on discipline, risk management, and sound analytical framework. Whether you are trading on the NSE or BSE, understanding market mechanics is paramount.\n\n### Key Tenets of Successful Investing:\n1. **Asset Allocation & Diversification:** Never allocate more than 10-15% of your portfolio into a single equity ticker. Balance large-cap stability with mid-cap growth potential.\n2. **Fundamental Analysis:** Assess return on equity (ROE), debt-to-equity ratios, free cash flow conversion, and management integrity before taking a long-term position.\n3. **Technical Timing:** Utilize key moving averages (50-day and 200-day EMA), relative strength index (RSI), and support/resistance zones to identify entry and exit levels.\n4. **Risk-to-Reward Ratio:** Always maintain at least a 1:2 risk-to-reward ratio with disciplined stop-losses on speculative positions.\n\nInvesting is not about timing the market, but time in the market. Starting with structured Systematic Investment Plans (SIPs) or high-conviction blue-chip equities is the recommended trajectory for wealth creation.",
+    "createdAt": "2026-11-10T10:00:00.000Z",
+    "updatedAt": "2026-11-10T10:00:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a10002",
+    "title": "Demystifying Options Trading: Hedging vs Speculation in Nifty & BankNifty",
+    "category": "Options Trading",
+    "author": "Senior Derivatives Strategist",
+    "imageUrl": "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80",
+    "content": "Derivatives trading on indices like Nifty 50 and Bank Nifty provides unparalleled liquidity, but without strict risk protocols, capital erosion is swift. Understanding the difference between hedging a cash portfolio and pure speculation is essential.\n\n### Navigating Option Greeks:\n- **Delta:** Measures the sensitivity of an option's price to changes in the underlying index price.\n- **Theta (Time Decay):** The silent killer for option buyers. Time decay accelerates exponentially in the final 72 hours before weekly expiry.\n- **Vega & Implied Volatility (IV):** India VIX reflects market volatility. Buying options during high IV environments exposes traders to volatility crush even if the market moves in their predicted direction.\n\n### Sustainable Option Strategies:\nRather than naked option buying, professional desks rely on defined-risk spreads:\n1. **Bull Call Spreads / Bear Put Spreads:** Capping risk while participating in directional momentum.\n2. **Iron Condors & Strangles:** Non-directional strategies suited for range-bound consolidation phases.\n3. **Covered Calls:** Generating recurring yield on existing demat stock holdings.\n\nAlways remember: Capital preservation precedes profit maximization.",
+    "createdAt": "2026-11-12T14:30:00.000Z",
+    "updatedAt": "2026-11-12T14:30:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a10003",
+    "title": "SIP vs Lumpsum: Maximizing Wealth Creation Through Mutual Funds in 2026",
+    "category": "Mutual Fund Investing",
+    "author": "Wealth Advisory Desk",
+    "imageUrl": "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=1200&q=80",
+    "content": "One of the most frequent dilemmas for retail investors is whether to commit capital as a lump sum or deploy systematically through an SIP. While historical backtests show lump sum investing can outperform during sustained bull runs, SIP remains the gold standard for psychological resilience and rupee-cost averaging.\n\n### Why Rupee-Cost Averaging Works:\nDuring market corrections, your fixed monthly allocation acquires more mutual fund units. When the market inevitably recovers, your average acquisition cost ensures higher overall annualized returns (XIRR).\n\n### Portfolio Recommendations for 2026:\n- **Core Allocation (50-60%):** Flexi-cap and Nifty 50 Index funds for steady compound annual growth.\n- **Growth Allocation (25-30%):** Mid-cap and small-cap opportunities offering high beta in expanding economic cycles.\n- **Hedge Allocation (10-15%):** Dynamic asset allocation or multi-asset funds incorporating debt and gold.\n\nReview your portfolio annually, resist the urge to stop SIPs during pullbacks, and align investments strictly with your long-term life goals.",
+    "createdAt": "2026-11-15T09:15:00.000Z",
+    "updatedAt": "2026-11-15T09:15:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a10004",
+    "title": "Step-by-Step Guide to Opening a Paperless Demat & Trading Account",
+    "category": "Demat Account Guide",
+    "author": "Client Onboarding Team",
+    "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
+    "content": "Opening a Demat and Trading account in India has transformed from weeks of physical paperwork into a completely digital, 5-minute e-KYC procedure. At DB Fintrix, seamless onboarding enables you to participate in equities, IPOs, bonds, and derivatives instantly.\n\n### Essential Documentation Required:\n1. **PAN Card:** Mandatory tax identity proof registered with NSDL/CDSL.\n2. **Aadhaar Card with Mobile Linkage:** Required for instantaneous Aadhaar OTP DigiLocker e-Sign.\n3. **Bank Account Proof:** Cancelled cheque or 3-month bank statement with clear IFSC and account holder details.\n4. **Income Proof:** Required only if you intend to activate Futures & Options (F&O) segments.\n\n### Safety First:\nYour shares are securely held with national depositories (CDSL or NSDL), not with the broker itself. With two-factor authentication (TOTP/Biometric) and instant SMS alerts from depositories, your investments remain safe and transparent at all times.",
+    "createdAt": "2026-11-18T11:45:00.000Z",
+    "updatedAt": "2026-11-18T11:45:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a10005",
+    "title": "Building a High-Revenue Franchise: How to Become an Authorised Person (Sub-Broker)",
+    "category": "How to Become a Sub-Broker",
+    "author": "Partnership Growth Lead",
+    "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "content": "The financial services sector in India is experiencing exponential retail participation. As an Authorised Person (AP / Sub-Broker) partnering with DB Fintrix, you can build an independent, scalable business providing clients access to equity, derivatives, mutual funds, and portfolio advisory.\n\n### Advantages of the DB Fintrix Sub-Broker Model:\n- **Attractive Revenue Sharing:** High brokerage sharing ratios across intraday, delivery, and derivatives volume.\n- **Cutting-Edge Technology:** Robust back-office CRM, real-time client tracking, and lightning-fast trading platforms.\n- **Research & Advisory Backing:** Dedicated daily equity research calls, morning market updates, and algorithmic screeners for your clients.\n- **End-to-End Compliance & Training:** We manage regulatory registrations with NSE/BSE and SEBI, providing marketing materials and client acquisition support.\n\nBecoming a sub-broker transforms you into a trusted financial consultant in your local market, creating recurring lifetime revenue from every client interaction.",
+    "createdAt": "2026-11-20T16:20:00.000Z",
+    "updatedAt": "2026-11-20T16:20:00.000Z"
+  }
+]

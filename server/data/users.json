@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "665e8a1f2b14c3e809a30001",
+    "name": "Admin",
+    "email": "admin@dbfintrix.com",
+    "password": "adminpassword",
+    "createdAt": "2026-11-01T00:00:00.000Z"
+  },
+  {
+    "_id": "b90cceb4a424bfeefb05902c",
+    "name": "New Investor",
+    "email": "investor@test.com",
+    "password": "secretpassword",
+    "createdAt": "2026-11-21T08:36:39.714Z"
+  }
+]

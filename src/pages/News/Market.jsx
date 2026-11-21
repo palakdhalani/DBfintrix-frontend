@@ -126,16 +126,21 @@ const Market = () => {
 
     useEffect(() => {
         const fetchContent = async () => {
+            const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
             try {
-                const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hero/news-top-story`);
+                const res = await fetch(`${apiBase}/api/hero/news-top-story`);
                 if (res.ok) {
                     const data = await res.json();
                     if (data.heading) {
+                        let img = data.imageUrl;
+                        if (img && (img.startsWith('/uploads') || (img.startsWith('/') && !img.startsWith('//')))) {
+                            img = `${apiBase}${img}`;
+                        }
                         setDynamicTopStory(prev => ({
                             ...prev,
                             title: data.heading,
                             description: data.subheading || prev.description,
-                            image: data.imageUrl || prev.image
+                            image: img || prev.image
                         }));
                     }
                 }

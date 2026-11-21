@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { PhoneOutgoing, Clock, CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const Form = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -22,7 +24,7 @@ const Form = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts`, {
+            const response = await fetch(`${API_BASE}/api/contacts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -31,14 +33,15 @@ const Form = () => {
             });
             
             if (!response.ok) {
-                throw new Error('Failed to submit form');
+                const errData = await response.json().catch(() => ({}));
+                throw new Error(errData.error || 'Failed to submit form');
             }
             
             setStatus({ type: 'success', message: 'Thank you! We will call you back soon.' });
             setFormData({ fullName: '', mobileNumber: '', emailAddress: '', preferredTime: '', message: '' });
         } catch (error) {
             console.error('Submission error:', error);
-            setStatus({ type: 'error', message: 'Failed to submit. Please try again.' });
+            setStatus({ type: 'error', message: error.message || 'Failed to submit. Please try again.' });
         } finally {
             setIsSubmitting(false);
         }

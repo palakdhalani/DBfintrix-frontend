@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const ServiceHero = ({ image }) => {
   const [content, setContent] = useState({
     heading: 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
@@ -10,13 +12,17 @@ const ServiceHero = ({ image }) => {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hero/services-hero`);
+        const res = await fetch(`${API_BASE}/api/hero/services-hero`);
         if (res.ok) {
           const data = await res.json();
+          let heroImg = data.imageUrl;
+          if (heroImg && (heroImg.startsWith('/uploads') || (heroImg.startsWith('/') && !heroImg.startsWith('//')))) {
+            heroImg = `${API_BASE}${heroImg}`;
+          }
           setContent({
             heading: data.heading || 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
             subheading: data.subheading || 'Stocks, F&O, Intraday, all at Low Brokerage',
-            imageUrl: data.imageUrl || image
+            imageUrl: heroImg || image
           });
         }
       } catch (err) {

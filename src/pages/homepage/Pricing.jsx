@@ -9,8 +9,8 @@ const plans = [
     badge: '100% Free',
     badgeColor: 'bg-blue-100 text-blue-700 border-blue-200',
     title: 'Account Opening',
-    price: '₹0',
-    unit: '',
+    price: 'Zero Charges',
+    unit: 'Free Demat & Trading',
     description: 'Free Demat and Trading account opening with zero paperwork hassle.',
     icon: '🆓',
     accentBorder: 'hover:border-blue-500 hover:shadow-blue-500/15',
@@ -22,33 +22,33 @@ const plans = [
   },
   {
     id: 'delivery',
-    badge: 'Low Brokerage',
+    badge: 'Lowest Brokerage',
     badgeColor: 'bg-emerald-100 text-emerald-700 border-emerald-200',
     title: 'Equity Delivery',
-    price: '₹20',
-    unit: '',
-    description: 'Low brokerage on all your long-term equity delivery investments.',
+    price: 'Lowest Brokerage',
+    unit: 'On All Deliveries',
+    description: 'Lowest brokerage on all your long-term equity delivery investments.',
     icon: '📈',
     popular: true,
     accentBorder: 'border-emerald-500 shadow-xl shadow-emerald-900/10 hover:shadow-2xl hover:border-emerald-600',
     features: [
-      'Flat ₹20 brokerage on all NSE & BSE deliveries',
+      'Lowest brokerage on all NSE & BSE deliveries',
       'Direct dividend credits to your bank',
       'Zero hidden transaction fees or surcharges'
     ]
   },
   {
     id: 'trading',
-    badge: 'Flat Rate',
+    badge: 'Lowest Brokerage',
     badgeColor: 'bg-amber-100 text-amber-700 border-amber-200',
     title: 'Intraday & F&O',
-    price: '₹25',
-    unit: '/ executed order',
-    description: 'Flat fee for Intraday, Futures & Options, Currencies and Commodities.',
+    price: 'Lowest Brokerage',
+    unit: 'Per Executed Order',
+    description: 'Industry-lowest brokerage for Intraday, Futures & Options, Currencies and Commodities.',
     icon: '⚡',
     accentBorder: 'hover:border-amber-500 hover:shadow-amber-500/15',
     features: [
-      'Flat ₹25 or 0.03% (whichever is lower)',
+      'Industry-lowest brokerage rates on every trade',
       'Advanced Option Chain with live Greeks',
       'Fast order execution with zero latency'
     ]
@@ -131,12 +131,12 @@ const Pricing = () => {
                     {plan.description}
                   </p>
 
-                  <div className="flex items-baseline gap-1.5 mb-6 pb-6 border-b border-gray-100">
-                    <span className="text-5xl font-black text-[#1a2c4c] tracking-tight">
+                  <div className="flex flex-col justify-center min-h-[72px] mb-6 pb-6 border-b border-gray-100">
+                    <span className="text-2xl sm:text-3xl font-extrabold text-[#1a2c4c] tracking-tight group-hover:text-brand-green transition-colors">
                       {plan.price}
                     </span>
                     {plan.unit ? (
-                      <span className="text-gray-400 font-medium text-sm">
+                      <span className="text-brand-green font-semibold text-xs mt-1 uppercase tracking-wider">
                         {plan.unit}
                       </span>
                     ) : null}
@@ -154,7 +154,8 @@ const Pricing = () => {
                 </div>
 
                 {/* Card Action Button */}
-                <button 
+                <Link 
+                  to="/open-account"
                   className={`w-full py-3.5 rounded-full font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer ${
                     isSelected 
                       ? 'bg-brand-green text-white shadow-lg shadow-green-900/20 hover:bg-green-600' 
@@ -163,7 +164,7 @@ const Pricing = () => {
                 >
                   Choose {plan.title}
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </Link>
               </div>
             );
           })}

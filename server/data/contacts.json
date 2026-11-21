@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "665e8a1f2b14c3e809a20001",
+    "fullName": "Aarav Sharma",
+    "mobileNumber": "+91 98765 43210",
+    "emailAddress": "aarav.sharma@example.com",
+    "preferredTime": "Morning (9 AM - 12 PM)",
+    "message": "Interested in opening a Sub-broker partnership franchise in Ahmedabad.",
+    "status": "new",
+    "createdAt": "2026-11-20T10:30:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a20002",
+    "fullName": "Priya Patel",
+    "mobileNumber": "+91 98220 12345",
+    "emailAddress": "priya.patel@example.com",
+    "preferredTime": "Evening (4 PM - 7 PM)",
+    "message": "Need consultation on mutual funds and portfolio advisory services.",
+    "status": "in-progress",
+    "createdAt": "2026-11-21T09:15:00.000Z"
+  },
+  {
+    "_id": "665e8a1f2b14c3e809a20003",
+    "fullName": "Rajesh Mehta",
+    "mobileNumber": "+91 99090 87654",
+    "emailAddress": "rajesh.mehta@example.com",
+    "preferredTime": "Afternoon (12 PM - 4 PM)",
+    "message": "Looking to open a Demat account and learn options hedging strategies.",
+    "status": "resolved",
+    "createdAt": "2026-11-19T14:00:00.000Z"
+  }
+]

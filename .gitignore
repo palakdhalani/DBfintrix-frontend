@@ -20,6 +20,10 @@ dist-ssr
 .env.production.local
 .env.*
 
+# Uploads
+server/uploads/*
+!server/uploads/.gitkeep
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

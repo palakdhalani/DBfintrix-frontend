@@ -24,7 +24,8 @@ const LoginModal = ({ isOpen, onClose, onLoginSuccess }) => {
         setError(null);
 
         const endpoint = isLogin ? '/api/users/login' : '/api/users/register';
-        const url = `${import.meta.env.VITE_API_URL}${endpoint}`;
+        const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const url = `${apiBase}${endpoint}`;
 
         try {
             const response = await fetch(url, {

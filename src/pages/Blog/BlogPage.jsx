@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Calendar, User, Search, RefreshCw, Image as ImageIcon } from 'lucide-react';
 import Navbar from '../../Comman components/Navbar';
 import Footer from '../../Comman components/Footer';
 import blogImage from '../../assets/blog image.jpg';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const CATEGORIES = [
   'All',
@@ -19,6 +18,14 @@ const CATEGORIES = [
   'IPO Calendar',
   'Market Updates'
 ];
+
+export const getImageUrl = (url) => {
+  if (!url) return '';
+  if (url.startsWith('/uploads') || (url.startsWith('/') && !url.startsWith('//'))) {
+    return `${API_BASE}${url}`;
+  }
+  return url;
+};
 
 const BlogPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -33,24 +40,26 @@ const BlogPage = () => {
   const fetchBlogs = async () => {
     setLoading(true);
     try {
-      let url = `${import.meta.env.VITE_API_URL}/api/blogs`;
+      let url = `${API_BASE}/api/blogs`;
       if (activeCategory !== 'All') {
         url += `?category=${encodeURIComponent(activeCategory)}`;
       }
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch blogs');
       const data = await response.json();
-      setBlogs(data);
+      setBlogs(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Error fetching blogs from API:', error);
+      setBlogs([]);
     } finally {
       setLoading(false);
     }
   };
 
   const filteredBlogs = blogs.filter(blog => 
-    blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    blog.content.toLowerCase().includes(searchQuery.toLowerCase())
+    (blog.title || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+    (blog.content || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+    (blog.author || '').toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -65,7 +74,7 @@ const BlogPage = () => {
         {/* Subtle overlay to ensure text is readable but not overly dark */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-        {/* The geometric SVG shadow you asked to keep! */}
+        {/* Geometric SVG shadow */}
         <div className="absolute inset-0 opacity-30 z-0 text-black">
           <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0,100 L100,0 L100,100 Z" fill="currentColor" />
@@ -140,19 +149,25 @@ const BlogPage = () => {
                 className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Image */}
-                <div className="h-56 overflow-hidden relative bg-gray-100">
+                <div className="h-56 overflow-hidden relative bg-gray-100 flex items-center justify-center">
                   {blog.imageUrl ? (
                     <img 
-                      src={blog.imageUrl} 
+                      src={getImageUrl(blog.imageUrl)} 
                       alt={blog.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';
+                      }}
                     />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-gray-300">
-                      <ImageIcon className="w-12 h-12 opacity-50" />
-                    </div>
-                  )}
-                  <div className="absolute top-4 left-4">
+                  ) : null}
+                  <div 
+                    className="w-full h-full flex items-center justify-center text-gray-300 absolute inset-0" 
+                    style={{ display: blog.imageUrl ? 'none' : 'flex' }}
+                  >
+                    <ImageIcon className="w-12 h-12 opacity-50" />
+                  </div>
+                  <div className="absolute top-4 left-4 z-10">
                     <span className="bg-white/90 backdrop-blur-sm text-brand-dark px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
                       {blog.category}
                     </span>
@@ -173,16 +188,17 @@ const BlogPage = () => {
                     <div className="flex items-center text-xs text-gray-400 gap-4">
                       <div className="flex items-center gap-1.5">
                         <Calendar className="w-4 h-4" />
-                        {new Date(blog.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
+                        {blog.createdAt ? new Date(blog.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : 'Recent'}
                       </div>
                       <div className="flex items-center gap-1.5">
                         <User className="w-4 h-4" />
-                        {blog.author}
+                        {blog.author || 'Admin'}
                       </div>
                     </div>
                     <Link 
                       to={`/blog/${blog._id}`} 
                       className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-brand-green group-hover:bg-brand-green group-hover:text-white transition-colors"
+                      title="Read Article"
                     >
                       <ArrowRight className="w-4 h-4" />
                     </Link>
