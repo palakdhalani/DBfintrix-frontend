@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 const plans = [
   {
     id: 'free',
-    badge: '100% Free',
+    badge: 'Lowest Cost',
     badgeColor: 'bg-blue-100 text-blue-700 border-blue-200',
     title: 'Account Opening',
-    price: 'Zero Charges',
+    price: 'Lowest Cost',
     unit: 'Free Demat & Trading',
-    description: 'Free Demat and Trading account opening with zero paperwork hassle.',
+    description: 'Lowest cost Demat and Trading account opening with zero paperwork hassle.',
     icon: '🆓',
     accentBorder: 'hover:border-blue-500 hover:shadow-blue-500/15',
     features: [
@@ -22,33 +22,33 @@ const plans = [
   },
   {
     id: 'delivery',
-    badge: 'Lowest Brokerage',
+    badge: 'Lowest Cost',
     badgeColor: 'bg-emerald-100 text-emerald-700 border-emerald-200',
     title: 'Equity Delivery',
-    price: 'Lowest Brokerage',
+    price: 'Lowest Cost',
     unit: 'On All Deliveries',
-    description: 'Lowest brokerage on all your long-term equity delivery investments.',
+    description: 'Lowest cost & brokerage on all your long-term equity delivery investments.',
     icon: '📈',
     popular: true,
     accentBorder: 'border-emerald-500 shadow-xl shadow-emerald-900/10 hover:shadow-2xl hover:border-emerald-600',
     features: [
-      'Lowest brokerage on all NSE & BSE deliveries',
+      'Lowest cost & brokerage on all NSE & BSE deliveries',
       'Direct dividend credits to your bank',
       'Zero hidden transaction fees or surcharges'
     ]
   },
   {
     id: 'trading',
-    badge: 'Lowest Brokerage',
+    badge: 'Lowest Cost',
     badgeColor: 'bg-amber-100 text-amber-700 border-amber-200',
     title: 'Intraday & F&O',
-    price: 'Lowest Brokerage',
+    price: 'Lowest Cost',
     unit: 'Per Executed Order',
-    description: 'Industry-lowest brokerage for Intraday, Futures & Options, Currencies and Commodities.',
+    description: 'Industry-lowest cost & brokerage for Intraday, Futures & Options, Currencies and Commodities.',
     icon: '⚡',
     accentBorder: 'hover:border-amber-500 hover:shadow-amber-500/15',
     features: [
-      'Industry-lowest brokerage rates on every trade',
+      'Industry-lowest cost on every executed trade',
       'Advanced Option Chain with live Greeks',
       'Fast order execution with zero latency'
     ]
