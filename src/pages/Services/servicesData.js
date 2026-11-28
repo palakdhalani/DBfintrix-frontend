@@ -100,7 +100,7 @@ export const servicesData = [
     id: 'mutual-funds',
     title: 'Mutual Funds',
     badge: 'Wealth Compounding',
-    description: "Low-cost Direct Mutual Funds and disciplined SIP investing across equity, debt, hybrid, and index funds curated by expert advisors.",
+    description: "Lowest-cost Direct Mutual Funds and disciplined SIP investing across equity, debt, hybrid, and index funds curated by expert advisors.",
     tag: 'SERVICES / INVESTORS',
     image: mutualFundsImg,
     subtitle: "Disciplined SIPs & Direct Mutual Fund Growth",

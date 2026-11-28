@@ -8,10 +8,10 @@ import { TrendingUp, Sparkles, ShieldCheck, Clock, Zap } from 'lucide-react';
 const investingData = [
   {
     id: 0,
-    title: "Low-Cost Stock Market Trading",
-    description: "Trade equity delivery, intraday, and F&O at low brokerage with lightning-fast order execution and transparent pricing.",
+    title: "Lowest Cost Stock Market Trading",
+    description: "Trade equity delivery, intraday, and F&O at the lowest cost with lightning-fast order execution and transparent pricing.",
     image: img1,
-    badge: "Low Brokerage & Fast Execution",
+    badge: "Lowest Cost & Fast Execution",
     themeColor: "from-blue-500 to-indigo-600",
     borderActive: "border-brand-blue bg-blue-50/40",
     pillBg: "bg-blue-100 text-blue-700",

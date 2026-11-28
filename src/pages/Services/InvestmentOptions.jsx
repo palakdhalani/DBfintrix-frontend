@@ -117,7 +117,7 @@ const options = [
     accentBullet: "text-emerald-400 group-hover:text-emerald-300",
     bottomArrowBg: "bg-emerald-600 group-hover:bg-white group-hover:text-emerald-700",
     lines: [
-      "Low-cost Direct Mutual Funds",
+      "Lowest-Cost Direct Mutual Funds",
       "Disciplined compounding monthly SIPs from ₹500",
       "Expert-curated equity, debt & ELSS tax-saving baskets"
     ]

@@ -5,7 +5,7 @@ const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 const ServiceHero = ({ image }) => {
   const [content, setContent] = useState({
     heading: 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
-    subheading: 'Stocks, F&O, Intraday, all at Low Brokerage',
+    subheading: 'Stocks, F&O, Intraday, all at Lowest Cost & Brokerage',
     imageUrl: image
   });
 
@@ -21,7 +21,7 @@ const ServiceHero = ({ image }) => {
           }
           setContent({
             heading: data.heading || 'Enjoy 1 Year of <br className="hidden md:block" /> FREE Demat Account',
-            subheading: data.subheading || 'Stocks, F&O, Intraday, all at Low Brokerage',
+            subheading: data.subheading || 'Stocks, F&O, Intraday, all at Lowest Cost & Brokerage',
             imageUrl: heroImg || image
           });
         }

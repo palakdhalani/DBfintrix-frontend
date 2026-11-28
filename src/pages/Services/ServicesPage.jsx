@@ -45,7 +45,7 @@ const ServicesPage = () => {
               FREE Demat Account
             </>
           }
-          subtitle="Stocks, F&O, Intraday, all at Low Brokerage"
+          subtitle="Stocks, F&O, Intraday, all at Lowest Cost & Brokerage"
           noBgImage={true}
           sideImage={slide1}
           cardsData={serviceCardsData}
